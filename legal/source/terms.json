@@ -1,0 +1,685 @@
+{
+  "key": "terms",
+  "title": "Terms of Service",
+  "lastRevised": "June 30, 2026",
+  "consentVersion": "2.0",
+  "source": "HelloBoe - Terms of Service (06-30-2026).docx",
+  "blocks": [
+    {
+      "type": "body",
+      "text": "TERMS OF SERVICE FOR USE OF PLATFORM AND SERVICES: Please read the following terms for use of the Platform and Services (the “Terms”) carefully. If you do not agree to any or all of the Terms, you are not allowed to access the Platform or use any of the Services. By accessing or using our Platform or Services, you agree to be bound by all the terms stipulated herein and incorporated herein by reference. Agreement to these Terms is formed by affirmative assent via the clickwrap at Account creation and identifies the Company as the contracting legal entity. It is the responsibility of the user (“you”, “user(s)”, or “customer(s)”) to read the Terms before proceeding to use the Platform. Our Platform provides parents with educational, temperament-based parenting guidance for children aged 4 to 36 months, including tools such as a temperament quiz, assigned profiles, scores, check-ins, personalized content, and an AI-powered conversational feature called “Boe”. The Platform and Services are directed to and designed for use by parents and legal guardians who are 18 years of age or older; children do not register for, access, or use the Platform. You should read, understand and review the Terms periodically for updates. We reserve the right to change, modify, add, or remove portions of these Terms at any time, at our sole discretion. In the event of any inconsistency, the Privacy Policy controls with respect to personal information (including Child PII); specific consent screens control with respect to the consent they describe; the applicable Apple/Google platform terms control with respect to app distribution, billing, and payment; and these Terms otherwise control. You agree to these Terms and to our Privacy Policy by using or logging onto the Platform or by using any of our Services. The Platform and Services are offered to United States residents only."
+    },
+    {
+      "type": "body",
+      "text": "If you have any questions, please contact us at support@helloboe.com."
+    },
+    {
+      "type": "heading",
+      "text": "DEFINITION OF TERMS"
+    },
+    {
+      "type": "body",
+      "text": "“Adult User” means a parent or legal guardian who is 18 years of age or older and who registers for and uses the Platform and Services, including by providing information about their Child."
+    },
+    {
+      "type": "body",
+      "text": "“AI Systems” means all artificial intelligence, large language model (“LLM”), machine learning, natural language processing and related technologies, models, algorithms and systems used by the Company or its third-party partners in connection with the Services, including but not limited to Boe and any models trained, developed, refined or enhanced using data collected through the Services or Platform."
+    },
+    {
+      "type": "body",
+      "text": "“App” means the Company's native mobile application(s) for iOS and Android, distributed through the Apple App Store and Google Play."
+    },
+    {
+      "type": "body",
+      "text": "“Boe” means the Company’s AI-powered conversational feature that allows Adult Users to engage in conversational interactions to receive general parenting guidance, ideas, and suggestions."
+    },
+    {
+      "type": "body",
+      "text": "“Child” or “Children” means a minor child whose information is provided by an Adult User about and on behalf of the child in connection with the Services."
+    },
+    {
+      "type": "body",
+      "text": "“Child PII” means PII relating to a Child, whether provided by an Adult User or derived or inferred by the Services, including temperament profiles, scores, and Boe’s memory."
+    },
+    {
+      "type": "body",
+      "text": "“Company” refers to HelloBoe Inc., the legal entity that owns and operates the Platform and provides the Services."
+    },
+    {
+      "type": "body",
+      "text": "“Company IP” means all rights, titles, and interest in and to: (a) all AI Systems, including all AI models, model weights, parameters, algorithms, configurations, architectures, neural networks, and other machine learning systems trained, developed, or deployed using Training Data or data collected through the Services or Platform; (b) all improvements, enhancements, derivative works, modifications, fine-tuned models, and adaptations to the AI Systems; (c) all aggregated, de-identified, or anonymized datasets compiled, curated, or derived from Training Data or User Data; (d) all proprietary methodologies, processes, techniques, know-how, trade secrets, and inventions related to or arising from the development, training, or operation of the AI Systems; (e) all software, source code, object code, APIs, tools, and infrastructure used in connection with the AI Systems or the Platform; and (f) all intellectual property rights in the foregoing, including all patents, copyrights, trademarks, and trade secret rights."
+    },
+    {
+      "type": "body",
+      "text": "“Input” means any content, data, text, prompts, or other materials that you provide to or upload into the AI Systems, including information you provide through Boe."
+    },
+    {
+      "type": "body",
+      "text": "“Output” means any content generated by the AI Systems in response to or based on your Input. By using the Platform or Services, you understand and agree that your Input may be used to generate Output and that both your Input and Output may be used in accordance with the Training License and these Terms."
+    },
+    {
+      "type": "body",
+      "text": "“PII” means personally identifiable information, including “personal information” as defined under applicable United States privacy laws."
+    },
+    {
+      "type": "body",
+      "text": "“Platform” means, collectively, the Website together with any App."
+    },
+    {
+      "type": "body",
+      "text": "“HelloBoe Parties” means HelloBoe Inc. and each of its respective directors, officers, shareholders, employees, agents, affiliates, successors, and assigns."
+    },
+    {
+      "type": "body",
+      "text": "“Services” refers to all the activities, features, functionalities, and operations provided by the Company through the Platform, including tools and resources relating to child development, parenting guidance, family wellness, and Boe, as detailed in these Terms or as otherwise specified by the Company."
+    },
+    {
+      "type": "body",
+      "text": "“Subscriber” is a User who has registered as per the instructions on the Platform and may (as and if applicable) have elected to receive updates, newsletters, or other regular information provided by us via email or other forms of communication."
+    },
+    {
+      "type": "body",
+      "text": "“Training Data” means all data, content, information, including Input and Output, provided by, generated by, or collected from users in connection with their use of the Platform or Services – including prompts, responses, user-generated content, metadata, and usage data – that is used, solely in de-identified, anonymized, or aggregated form to train, develop, refine, improve, and enhance the Company’s AI Systems."
+    },
+    {
+      "type": "body",
+      "text": "“Training License” means the limited license granted by you under Section 24.3 to the Company to use eligible User Data, solely in the form of de-identified, anonymized, or aggregated versions of User Data, to develop, improve, train, operate, and enhance the Platform, Services, Boe, and the Company’s AI Systems, subject to the child-data restrictions and consent requirements set forth in these Terms and the Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "“User Content” means information the parent submits about themselves and the Child, including quiz answers, check-in responses, life-context information (e.g., siblings, care arrangement), and messages to Boe."
+    },
+    {
+      "type": "body",
+      "text": "“User Data” means all data, content and information provided by, generated by or collected from users in connection with their use of the Platform or Services, including without limitation prompts, responses, metadata, usage data, personally identifiable information, and user-generated content."
+    },
+    {
+      "type": "body",
+      "text": "“Website” refers to the website accessible via https://www.helloboe.com, as well as any subdomains of helloboe.com."
+    },
+    {
+      "type": "body",
+      "text": "“We”, “us”, or “our” refers to the Company, as defined above and these Terms may have been used interchangeably in the Terms however shall refer to mean the same."
+    },
+    {
+      "type": "body",
+      "text": "“You”, “your”, “customer” or “user” refers to any individual, company, or other legal entity that accesses or uses the Platform or the Services, whether as a visitor or as a registered user."
+    },
+    {
+      "type": "heading",
+      "text": "ACCEPTANCE OF USER TERMS"
+    },
+    {
+      "type": "body",
+      "text": "These Terms are a legally binding document that shall govern the relationship between the Company and you in relation to your access to, and use of, the Company’s Platform and Services. You agree to use the Platform only for lawful purposes and in accordance with these Terms. You hereby represent and warrant that you are 18 years of age or older and have the legal authority to consent to these Terms. The Platform and Services are intended for use by Adult Users only, children may not register, access the Services or submit information. If you are an Adult User providing information about a Child, you represent and warrant that (a) you are the parent or legal guardian of such Child, (b) you have the legal authority to provide the Child’s information and to consent to its processing on the Child’s behalf, and (c) you consent to the collection and use of such Child’s PII as described in these Terms and our Privacy Policy. By using the Platform and Services, you represent and warrant that you are of legal age to form a binding contract with the Company and meet all of the eligibility requirements. If you do not meet all of these requirements, you must not access or use the Platform or any Services."
+    },
+    {
+      "type": "body",
+      "text": "You agree not to use the Platform or Services for any purpose that is unlawful or prohibited by these Terms. Without limiting the generality of the foregoing or the restrictions set forth in Section 4, you agree that you will not: (a) attempt to extract, reverse-engineer, decompile, or otherwise misappropriate any Company IP, proprietary training insights, AI models, algorithms, or other intellectual property of the Company; (b) use any Output of the AI Systems to train, develop, or improve any competing artificial intelligence or machine learning system; (c) use the Platform or Services for any purpose that is competitive with the Company or its products and services; or (d) encourage or assist any third party in doing any of the foregoing."
+    },
+    {
+      "type": "body",
+      "text": "To access and use certain features of the Platform you may be required to agree to certain additional terms and conditions. All such additional terms and conditions are hereby made a part of these Terms. In the event of any inconsistency between these Terms and any additional terms and conditions, the additional terms and conditions will control but solely with respect to the subject matter thereof."
+    },
+    {
+      "type": "body",
+      "text": "These Terms set out the terms and conditions upon which the Company has agreed to grant you access to the Platform and Services. By using the Platform or subscribing to or accessing any portion thereof, you acknowledge that you have read, understood, and accepted these Terms, including all representations, warranties, covenants, and other obligations set forth herein, and you have the authority to act on behalf of any person or entity for whom you are using the Platform. You are deemed to have agreed to these Terms on behalf of any entity for whom you use the Platform."
+    },
+    {
+      "type": "heading",
+      "text": "THE SERVICES"
+    },
+    {
+      "type": "body",
+      "text": "Platform. The Platform is available only to individuals who are over 18 years of age and can legally enter into binding contracts under all applicable laws. The Services provide parents with educational, temperament-based parenting guidance for children aged 4 to 36 months. The Services include, but are not limited to: (a) a temperament quiz and assigned temperament profile with scores; (b) periodic check-ins and developmental feedback; (c) personalized content and recommendations for Adult Users; and (d) the AI-powered conversational feature, Boe, which allows Adult Users to engage in conversational interactions to receive general parenting guidance, ideas, and suggestions. Adult Users may input information about their Children in order to use the Services. The Platform does not guarantee continuous availability, and features may change. The Platform and Services are strictly not directed to children and no person under the age of 18 may create an Account or agree to these Terms."
+    },
+    {
+      "type": "body",
+      "text": "Linked Caregivers. The Company may, in the future, allow a Child’s profile to be linked to more than one Adult User. If and when the Company offers this functionality, the primary Adult User would control invitations and could revoke any additional Adult User’s access at any time; any linked Adult Users would be able to view the same profile information and history; and each linked Adult User would be required to independently satisfy the eligibility requirements of, and would be deemed to make the representations and warranties set forth in, Section 2.1 with respect to the Child. This functionality may not be available at launch and may never be offered."
+    },
+    {
+      "type": "body",
+      "text": "Recommendations and Affiliate Links. The Platform may display product recommendations (e.g. toys) in connection with your Child’s age range or temperament. If the Company introduces an affiliate program in the future, recommendations may include affiliate links through which the Company may earn a commission. We do not serve behavioral or targeted advertising based on a Child’s data, and we do not permit third-party advertising networks to collect information about Children on the Platform. Recommendations are generated by the Company within the Platform; we do not share your Child’s personal information with merchants, affiliate networks, or other advertising partners in connection with such recommendations."
+    },
+    {
+      "type": "heading",
+      "text": "RESTRICTIONS"
+    },
+    {
+      "type": "body",
+      "text": "By using the Platform, you specifically agree not to be involved in any activity or transmit any information that, in our sole discretion:"
+    },
+    {
+      "type": "body",
+      "text": "Is illegal, or violates any federal, state, or local law or regulation."
+    },
+    {
+      "type": "body",
+      "text": "Advocates illegal activity or discusses illegal activities with the intent to commit them."
+    },
+    {
+      "type": "body",
+      "text": "Violates any third-party right, including, but not limited to, right of privacy, right of publicity, copyright, trademark, patent, trade secret, or any other intellectual property or proprietary rights."
+    },
+    {
+      "type": "body",
+      "text": "Is harmful, threatening, abusive, harassing, tortious, indecent, defamatory, sexually explicit or pornographic, discriminatory, vulgar, profane, obscene, libelous, hate speech, violent or inciting violence, inflammatory, or otherwise objectionable."
+    },
+    {
+      "type": "body",
+      "text": "Interferes with any other party’s use and enjoyment of the Platform."
+    },
+    {
+      "type": "body",
+      "text": "Attempts to impersonate another person or entity."
+    },
+    {
+      "type": "body",
+      "text": "Is of a commercial nature in a way that violates these Terms, including but not limited to, using the Platform for spam, surveys, contests, pyramid schemes, or other advertising materials."
+    },
+    {
+      "type": "body",
+      "text": "Falsely states, misrepresents, or conceals your affiliation with another person or entity."
+    },
+    {
+      "type": "body",
+      "text": "Accesses or uses the account of another user without such user's permission."
+    },
+    {
+      "type": "body",
+      "text": "Distributes computer viruses or other code, files, or programs that interrupt, destroy, or limit the functionality of any computer software or hardware or electronic communications equipment."
+    },
+    {
+      "type": "body",
+      "text": "Interferes with, disrupts, disables, overburdens, or destroys the functionality or use of any features of the Platform, or the servers or networks connected to the Platform."
+    },
+    {
+      "type": "body",
+      "text": "“Hacks” or accesses without permission our proprietary or confidential records, those of another user, or those of anyone else."
+    },
+    {
+      "type": "body",
+      "text": "Improperly solicits personal or sensitive information from other users including without limitation address, credit card or financial account information, or passwords."
+    },
+    {
+      "type": "body",
+      "text": "Decompiles, reverse engineers, disassembles, or otherwise attempts to derive source code from the Platform, except as expressly permitted in these Terms or by law, unless and then only to the extent permitted by applicable law without our consent."
+    },
+    {
+      "type": "body",
+      "text": "Removes, circumvents, disables, damages, or otherwise interferes with security-related features, or features that enforce limitations on use of the Platform."
+    },
+    {
+      "type": "body",
+      "text": "Uses automated or manual means to violate the restrictions in any robot exclusion headers on the Platform, if any, or bypasses or circumvents other measures employed to prevent or limit access, for example by engaging in practices such as “screen scraping,” “database scraping,” or any other activity with the purpose of obtaining lists of users or other information."
+    },
+    {
+      "type": "body",
+      "text": "Modifies, copies, scrapes or crawls, displays, distributes, publishes, licenses, sells, rents, leases, lends, transfers, or otherwise commercializes any materials or content on the Platform."
+    },
+    {
+      "type": "body",
+      "text": "Downloads, distributes, posts, transmits, performs, reproduces, broadcasts, duplicates, uploads, licenses, creates derivative works from, or offers for sale any content or other information contained on or obtained from or through the Platform, by any means except as provided for in these Terms or with the prior written consent of the Company; or"
+    },
+    {
+      "type": "body",
+      "text": "Attempts to do any of the foregoing."
+    },
+    {
+      "type": "body",
+      "text": "By accessing or using the Platform and Services, you represent and warrant that you meet the eligibility requirements and will abide by these Terms."
+    },
+    {
+      "type": "body",
+      "text": "You may not advertise, promote, or otherwise reference the Platform or Services using unsolicited messages of any kind. This prohibition includes, without limitation, email, SMS/MMS, social media direct messages, forum/blog comments, in-app messages, or similar channels, whether manual or automated, and whether bulk or individual."
+    },
+    {
+      "type": "heading",
+      "text": "REGISTRATION OF ACCOUNT"
+    },
+    {
+      "type": "body",
+      "text": "Account Registration. In order to access and use our Platform, you must have an account (“Account”) that contains certain information about you and your Child. You represent and warrant that (a) all required information you submit is truthful, accurate, and complete and (b) you will maintain the accuracy of such information. Services output depends on the accuracy of the information you provide. You may delete your Account at any time, for any reason, by following the instructions in the App or contacting us at support@helloboe.com. We may suspend or terminate your Account in accordance with Section 7.5. You are responsible for maintaining the confidentiality of your Account login information and are fully responsible for all the activities that occur under your Account."
+    },
+    {
+      "type": "body",
+      "text": "Third-Party Login. You may register or log in using a third-party identity provider (e.g. Apple or Google). If you choose this option, we receive the basic account details, including your name and email address. Your use of any third-party login is subject to that provider’s terms."
+    },
+    {
+      "type": "body",
+      "text": "Two-Factor Authentication. We support optional two-factor authentication when made available. You are responsible for safeguarding your authentication codes and devices."
+    },
+    {
+      "type": "body",
+      "text": "Payment Information and Paid Features. All purchases are processed by the Apple App Store or Google Play as in-app purchases; the Company does not receive credit card or payment data and sees only entitlement status. Full functionality or certain features of the Platform may require a paid subscription. Billing, renewal, cancellation, and refunds are governed by the applicable platform’s terms; instructions for canceling are available via the platform’s subscription settings. Subscriptions continue until the end of the paid subscription period. Deleting your Account does not by itself cancel any active subscription or stop future billing; subscriptions are billed through, and may be cancelled only through the applicable platform’s subscription settings, as stated in Section 7.7."
+    },
+    {
+      "type": "body",
+      "text": "Automatic Renewal. If you purchase a subscription, your subscription shall automatically renew, and your payment method will be automatically charged at the start of each subscription period for any and all fees applicable to that period, as stated herein.  Specifically, unless you cancel your subscription, your subscription will automatically renew at the end of each billing period (monthly or annual, as selected at purchase), and the applicable platform (Apple App Store or Google Play) will charge the then-current subscription price to your platform account for each renewal term until you cancel. The price, billing frequency, and renewal terms are disclosed to you at the point of purchase. Because all billing is processed by the Apple App Store or Google Play, you can manage your subscription, turn off automatic renewal, and cancel at any time through your device’s subscription settings; cancellation takes effect at the end of the then-current billing period, and access continues until that time. As noted in Sections 5.4 and 7.7, deleting your Account does not by itself cancel a subscription or stop billing. Price changes apply only to subsequent billing periods, and, where required by applicable law, you will be notified and any required consent obtained before a price increase takes effect."
+    },
+    {
+      "type": "body",
+      "text": "Additional Child Profiles. Your subscription includes up to two child profiles. You may add additional child profiles (third child onwards) for an additional fee per child, billed through the Apple App Store or Google Play as an in-app purchase on a monthly or annual basis matching your subscription’s period. Current pricing and details are shown in your Account and are subject to change."
+    },
+    {
+      "type": "heading",
+      "text": "INTELLECTUAL PROPERTY, COPYRIGHT AND LIMITED LICENSE GRANT"
+    },
+    {
+      "type": "body",
+      "text": "The Platform and its entire contents, features and functionality, all rights, titles, and interest in and to the Platform (including but not limited to all information, software, text, displays, images, video and audio, and the design, selection and arrangement, copyright, thereof), are owned by the Company, its affiliates, its licensors and are protected by the applicable international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws. As between you and the Company, you retain all ownership rights in and to your Input and Output. The Company does not claim ownership of your original, unprocessed personal information. For the avoidance of doubt, nothing in this Section limits the Training License granted in Section 24 or the Company’s exclusive ownership of Company IP as set forth in Section 25."
+    },
+    {
+      "type": "body",
+      "text": "As a user and participant of this Platform, you are granted a revocable, non-exclusive, non-transferable, and limited license to use the Platform and content subject to these Terms. We may terminate this license at any time for any reason. You may use the Platform on one computer for your own personal and non-commercial use. No part of this Platform may be reproduced in any form either electronic or mechanical. Logos, information, content, design, text, graphics, and other files (collectively, the “Content”) are the property of the Company. This property is protected by US copyright law. You should never use, copy, emulate, clone, sell, modify, or transfer the Content on the Platform for any reason."
+    },
+    {
+      "type": "body",
+      "text": "All rights, title and interest in and to the Platform will remain with and belong exclusively to us. You will not resell, rent, lease, transfer, assign, time share or otherwise commercially exploit or make Platform content available to any third party."
+    },
+    {
+      "type": "body",
+      "text": "You agree not to access the Platform by any means other than through the interface that is provided by the Company to access the same. You may not use any “page-scrape,” “deep-link,” “spider,” or “robot” or other automatic program, device, algorithm or methodology, or any similar manual process, to access, copy, acquire, or monitor any portion of the Platform, or in any way reproduce or circumvent the presentation or navigational structure of the Platform, to obtain or attempt to obtain any content or other information through any means not made generally available through the Platform. The Company reserves the right to take any lawful measures to prevent any such activity. You may not forge headers or otherwise manipulate identifiers in order to disguise the origin of any message or transmittal you send to or through the Platform or any service offered on or through the Platform. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity. Nothing in this Section 6 shall be construed as limiting the Company’s exclusive ownership of Company IP; however, the Company does not claim ownership of your original, unprocessed personal information. Any processed, aggregated, de-identified, anonymized, or derivative versions of such data that are incorporated into Company IP shall be the exclusive property of the Company in accordance with Section 25 and our Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "The Company name, Company logo and all related names, logos, product and service names, designs and slogans are trademarks of the Company or its affiliates or licensors. You must not use such marks without the prior written permission of the Company. All other names, logos, product and service names, designs and slogans on the Platform are the trademarks of their respective owners."
+    },
+    {
+      "type": "body",
+      "text": "If you print, copy, modify, download or otherwise use or provide any other person with access to any part of the Platform in breach of these Terms, your right to use the Platform will cease immediately and you must, at our option, return or destroy any copies of the materials you have made. No right, title or interest in or to the Platform or any content on the Platform is transferred to you, and all rights not expressly granted are reserved by the Company. Any use of the Platform not expressly permitted by these Terms is a breach of these Terms and may violate copyright, trademark and other laws."
+    },
+    {
+      "type": "heading",
+      "text": "ACCESSING WEBSITE, SUSPENSION AND CANCELLATION OF ACCOUNT"
+    },
+    {
+      "type": "body",
+      "text": "We reserve the right to withdraw or amend the Platform, and any service or material we provide on the Platform, in our sole discretion without notice. We will not be liable if for any reason all or any part of the Platform is unavailable at any time or for any period. From time to time, we may restrict access to some or all parts of the Platform to users, including registered users."
+    },
+    {
+      "type": "body",
+      "text": "You are responsible for: (a) making all arrangements necessary for you to have access to the Platform and (b) ensuring that all persons who access the Platform through your internet connection are aware of these Terms and comply with them."
+    },
+    {
+      "type": "body",
+      "text": "To access the Platform or some of the resources it offers, you may be asked to provide certain registration details and in order to do so you will have to provide accurate personal information, such as your email address, mailing address and other contact details in order to complete your order or contact you as needed or other information. It is a condition of your use of the Platform that all the information you provide on the Platform is accurate, current and complete. You agree to promptly update your Account and information. You authorize us to collect and use this information to contact you in accordance with our Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "If you choose, or are provided with, a username, password or any other piece of information as part of our security procedures, you must treat such information as confidential, and you must not disclose it to any other person or entity. You agree to notify us immediately of any unauthorized access to or use of your username or password or any other breach of security. You also agree to ensure that you exit your Account at the end of each session. You should use caution when accessing your Account from a public or shared computer so that others are not able to view or record your password or other personal information."
+    },
+    {
+      "type": "body",
+      "text": "We have the right to disable any username, password or other identifier, whether chosen by you or provided by us, at any time in our sole discretion for any or no reason, including if, in our opinion, you have violated any provision of these Terms or the terms of any other arrangement you have entered into with the Company. You may not create another Account if we have disabled your Account unless you obtain our prior written consent."
+    },
+    {
+      "type": "body",
+      "text": "Your subscription may be suspended or terminated if you: (a) violate any provision of these Terms or any other applicable agreement with the Company; (b) provide false, inaccurate, or misleading information in connection with your Account or use of the Platform; (c) fail to follow the instructions provided on the Platform; (d) engage in any fraudulent, abusive, or unlawful activity in connection with the Platform or Services; (e) attempt to extract, reverse-engineer, scrape, or otherwise misappropriate any Company IP, proprietary training insights, AI models, or other intellectual property of the Company; (f) use the Platform or Services in a manner that poses a security risk or may cause harm to the HelloBoe Parties, other users, or third parties; (g) use the Platform or Services for any purpose that is competitive with the Company; or (h) such action is required to comply with applicable law or a governmental request."
+    },
+    {
+      "type": "body",
+      "text": "If you feel your Account has been incorrectly suspended or closed, you must contact us at support@helloboe.com within 60 days. You may attach all relevant information that offers evidence of the discrepancy. Upon receiving your request, we will notify you and share our final decision within 30 days. The decision by Company with regards to account suspension or cancellation will be final."
+    },
+    {
+      "type": "body",
+      "text": "To cancel your Account, you shall enter the Platform via your Account and affirmatively cancel your account. You understand and agree that upon suspension or closing of your Account, your right to access the Services will cease and any rewards or incentives in your Account, if and when offered, will be forfeited. Account deletion permanently deletes the Account and the Child’s data, including any cloud copy, in accordance with the Privacy Policy’s retention schedule. Deleting your Account does not cancel any subscription billed through the Apple App Store or Google Play; to stop further billing, you must cancel the subscription through your device’s subscription settings in the applicable app store. The following provisions survive cancellation and/or termination of your Account: dispute resolution, intellectual property, disclaimers, and liability limitations. We reserve the right to terminate your Account at any time for any reason."
+    },
+    {
+      "type": "heading",
+      "text": "COMMUNICATIONS AND NOTIFICATIONS"
+    },
+    {
+      "type": "body",
+      "text": "The Company may send you communications related to your Account, the Services, and your use of the Platform, including push notifications, in-app messages and emails. By using the Platform, you consent to receiving such communications. You may opt-out of non-essential communications at any time through your Account settings or by contacting us at support@helloboe.com."
+    },
+    {
+      "type": "body",
+      "text": "Push Notifications. We may send push notifications with daily insights, engagement prompts, Boe follow-ups, user-set reminders, and behavior check-ins. Push notifications are provided only if you affirmatively opt-in and can be disabled at any time in your device settings."
+    },
+    {
+      "type": "body",
+      "text": "Marketing Emails. Marketing emails are sent only if affirmatively opted in. You can withdraw consent at any time in your Account settings or by clicking the unsubscribe link in any marketing email."
+    },
+    {
+      "type": "heading",
+      "text": "DISCLAIMER OF WARRANTIES"
+    },
+    {
+      "type": "body",
+      "text": "Your use of the Services, including without limitation your use of any content, is at your sole risk. The Services and all content are provided on an “as available” basis. The HelloBoe Parties expressly disclaim all warranties of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. The HelloBoe Parties do not warrant uninterrupted use, operation, or availability of the Services or any content, or that any submission or transaction request you attempt using the Services will be successful, uncorrupted, or completed within a certain amount of time. You will be solely responsible for any delay or loss of any kind that results from your access to the content. No advice or recommendations, whether oral or written, obtained by you from the Platform or any HelloBoe Party through or from the Services will create any warranty regarding the Services that is not expressly stated in these Terms. Some jurisdictions may prohibit a disclaimer of warranties and you may have other rights that vary from jurisdiction to jurisdiction."
+    },
+    {
+      "type": "heading",
+      "text": "THIRD-PARTY CONTENT"
+    },
+    {
+      "type": "body",
+      "text": "Services may contain links or references to information, content, and services provided by third parties (collectively “Third-Party Content”). We do not monitor or have any control over Third-Party Content. We do not endorse or adopt any Third-Party Content and can make no guarantee as to its accuracy or completeness. We undertake no responsibility to update or review any Third-Party Content and do not represent or warrant the accuracy of any information contained in any Third-Party Content. You use any Third-Party Content contained therein at your own risk. Views expressed in Third-Party Content are not endorsed by us."
+    },
+    {
+      "type": "heading",
+      "text": "CONSENT TO DATA COLLECTION AND USE"
+    },
+    {
+      "type": "body",
+      "text": "By accessing or using the Platform or Services, you expressly consent to the Company’s collection, use, processing and retention of your User Data — including but not limited to prompts, responses, PII, metadata, and usage data — for the following purposes: (a) providing, maintaining, and improving the Services; (b) analytics, statistical analysis, and research regarding user behavior, engagement, and usage patterns across the Services and Platform; (c) training, developing, refining, improving, and enhancing AI Systems (using de-identified or aggregated data only, as described in Section 24), including LLM models, machine learning algorithms, and related technologies; (d) product development, personalization, and optimization of the Services; (e) creating de-identified, anonymized, and aggregated datasets for benchmarking and internal research; and (f) any other purposes described in our Privacy Policy. With respect to your Child’s PII, the Company uses such information solely for the purpose of providing and improving the Services and supporting the internal operations of the Platform, and not for marketing, advertising, or any purpose unrelated to the provision of the Services. The Company expressly commits that it will not sell Child PII and will not use Child PII for targeted or cross-context behavioral advertising. We remove or de-identify PII, including any Child PII before incorporating data into training datasets. We do not use Child PII in an identifiable form to train AI models. Information transmitted to our third-party AI service provider in order to operate Boe is described in Section 24.4 and the Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "Children’s Privacy. Your Child’s information is provided by you, the parent, on the Child’s behalf. Your onboarding consent at Account creation constitutes your express opt-in to processing your Child’s information as described in the Privacy Policy. You may withdraw consent at any time by deleting your Account or contacting us at support@helloboe.com; withdrawal of consent will result in deletion of your Child’s data in accordance with the Privacy Policy’s retention schedule. The Company’s practices regarding Child PII, including data minimization, retention, deletion, and de-identification, are governed by the Privacy Policy, which is incorporated into these Terms by reference. In the event of any conflict between these Terms and the Privacy Policy, the Privacy Policy controls with respect to Child PII. We will provide direct notice to parents and obtain renewed consent for any material changes affecting how we collect, use, or disclose Child PII."
+    },
+    {
+      "type": "body",
+      "text": "Temperament Research. With your separate, opt-in consent, we may use de-identified and aggregated data to support temperament research. This research consent is separate from, and does not expand the scope of, your consent to the processing described in the Privacy Policy. These research datasets do not include children’s names or conversation history, and are designed not to be reasonably linked to a specific child. Research consent is purpose-limited, default off, and revocable; you may withdraw consent at any time through the Account settings."
+    },
+    {
+      "type": "body",
+      "text": "De-Identified and Aggregated Data. The Company may create and use de-identified and/or aggregated data that cannot reasonably be linked to any person, child, or household, for lawful purposes including research, product improvement, and analytics. The Company commits not to attempt to re-identify de-identified data, will implement technical safeguards against re-identification, and will contractually require any recipient of such data to maintain these protections, consistent with applicable state privacy laws."
+    },
+    {
+      "type": "body",
+      "text": "User Content. You represent that all User Content you provide is accurate and current. Any suggestions or feedback you provide about the Services (as distinct from User Data) may be used by the Company without obligation, but this license is scoped to product feedback and does not extend to your User Data."
+    },
+    {
+      "type": "body",
+      "text": "License to Operate the Services. You grant the Company a limited, revocable, non-exclusive license to host, process, and display User Content solely to provide, maintain, secure, and improve the Services for you — expressly including generation of derived data and inferences (profiles, scores, Boe’s cross-session memory) for your Child. This license terminates upon Account deletion, except as needed to complete the deletion process, comply with law, or with respect to de-identified data under these Terms."
+    },
+    {
+      "type": "heading",
+      "text": "PRIVACY & CONFIDENTIALITY"
+    },
+    {
+      "type": "body",
+      "text": "We may collect the registration data and obtain other information about you through the Services. Please see our Privacy Policy for information regarding the collection, use, and disclosure of such information."
+    },
+    {
+      "type": "body",
+      "text": "Our “Confidential Information” means (a) any written information, materials and other documents supplied by us related to the Platform which we do not generally disclose publicly, (b) the Platform and Services themselves, excluding any data you upload to the Platform for processing; (c) any other of our information that we may disclose in writing or orally and is designated as confidential or proprietary at the time of disclosure, or that due to the nature of the information a reasonable person would clearly understand it to be confidential information; and (d) any amendment to the terms and conditions of these Terms between you and us."
+    },
+    {
+      "type": "body",
+      "text": "Confidential Information shall not include any information that: (a) was or becomes generally known to the public through no fault or breach of these Terms; (b) was rightfully in your possession at the time of disclosure without restriction on use or disclosure; (c) was independently developed by you without use of our Confidential Information; or (d) was rightfully obtained by you from a third party not under a duty of confidentiality and without restriction on use or disclosure."
+    },
+    {
+      "type": "body",
+      "text": "Restricted Use and Nondisclosure. During and after the term, with respect to our Confidential Information you will: (a) use our Confidential Information solely for the purpose for which we provided it; (b) not disclose such Confidential Information to a third party; and (c) protect such Confidential Information from unauthorized use and disclosure to the same extent (but using no less than a reasonable degree of care) that you protect your own Confidential Information of a similar nature."
+    },
+    {
+      "type": "body",
+      "text": "Required Disclosure. If you are required by law to disclose our Confidential Information, you will give us prompt written notice before making the disclosure, unless prohibited from doing so by the legal or administrative process, and you will assist us to obtain where reasonably available an order protecting our Confidential Information from public disclosure."
+    },
+    {
+      "type": "body",
+      "text": "Ownership. Notwithstanding any other provision of these Terms, you acknowledge that, as between you and us, all our Confidential Information you receive from us, including all copies thereof in your possession or control, in any media, is proprietary to and exclusively owned by us. Nothing in these Terms grants you any right, title or interest in or to any of our Confidential Information, except as provided in these Terms. Any incorporation of our Confidential Information into any of your own materials will not render our Confidential Information non-confidential."
+    },
+    {
+      "type": "body",
+      "text": "Data Export. You may request or initiate a data export containing your information and your Child’s information as described in the Account settings. Exports are provided in a machine-readable format subject to legal and security limitations."
+    },
+    {
+      "type": "heading",
+      "text": "FEEDBACK"
+    },
+    {
+      "type": "body",
+      "text": "You acknowledge and agree that any comments, suggestions, ideas, questions, feedback, original or creative materials, and information provided by you to us, to the extent it is not User Data, may be used by the Company without restriction or obligation to you, and you grant the Company a perpetual, irrevocable, royalty-free license to use such feedback for any purpose. For the avoidance of doubt, and consistent with Section 11.5, this Section only applies to feedback about the Platform and Services and does not extend to your User Data."
+    },
+    {
+      "type": "heading",
+      "text": "INDEPENDENT CONTRACTORS"
+    },
+    {
+      "type": "body",
+      "text": "You and the Company are independent contractors for all purposes. No agency, partnership, joint venture, employee-employer, or franchisor-franchisee relationship is intended or created by these Terms or by your access to or use of the Platform and/or Services."
+    },
+    {
+      "type": "heading",
+      "text": "LEGAL NOTICES"
+    },
+    {
+      "type": "body",
+      "text": "By accessing or using the Platform or Services, you consent to receive electronic communications from the Company. These communications may include notices about your Account and information concerning or related to the Services. You agree that any notices, Terms, disclosures, or other communications that the Company sends to you electronically will satisfy any legal communication requirements, including any requirement that communications be in writing."
+    },
+    {
+      "type": "body",
+      "text": "The Company's failure to act in a particular circumstance does not waive its ability to act with respect to that circumstance or similar circumstances. Any provision of these Terms that is found to be invalid, unlawful, or unenforceable will be severed from these Terms, and the remaining provisions of these Terms will continue to be in full force and effect. The section headings and titles in these Terms are for convenience only and have no legal or contractual effect. Any provisions in these Terms that by their nature should survive the termination of these Terms (including, without limitation, provisions governing indemnification, limitations on liability, disclaimers of warranty, ownership of intellectual property, and ownership of Company IP, and the Training License) will continue to remain in full force and effect after the termination of these Terms."
+    },
+    {
+      "type": "body",
+      "text": "These Terms are governed by the laws of the State of California, excluding conflicts of law principles. This choice of law does not deprive you of any mandatory consumer-protection rights afforded by the laws of your state of residence."
+    },
+    {
+      "type": "heading",
+      "text": "DISPUTE RESOLUTION; ARBITRATION"
+    },
+    {
+      "type": "body",
+      "text": "Informal Resolution. As a condition to filing any claim, you and the Company agree to first attempt to resolve any controversy or claim arising out of or relating to the Platform, Services, or these Terms through good-faith informal negotiations. You must send a written notice describing the dispute to the Company at support@helloboe.com. The Company and you will have 60 days from the date of such notice to attempt to resolve the dispute informally before either party may commence arbitration."
+    },
+    {
+      "type": "body",
+      "text": "Binding Arbitration. Any controversy or claim arising out of or relating to the Platform, Services, or these Terms that is not resolved through informal resolution must be settled by binding individual arbitration in accordance with the consumer arbitration rules of the American Arbitration Association (the “AAA”). Any such controversy or claim will be arbitrated on an individual basis and will not be consolidated in any arbitration with any claim or controversy of any other party. The arbitration will be conducted in Los Angeles County, California, and judgment on the arbitration award may be entered into any court of competent jurisdiction. The Company will pay all consumer-side arbitration fees above the initial filing fee. The award of the arbitrator will be final and binding upon the parties without appeal or review except as permitted under the applicable law. Either party may bring an individual action in small claims court for disputes within that court’s jurisdiction. The Company may seek any interim or preliminary injunctive relief from any court of competent jurisdiction, as necessary to protect its rights or property pending the completion of arbitration."
+    },
+    {
+      "type": "body",
+      "text": "CLASS ACTION AND JURY TRIAL WAIVER: TO THE MAXIMUM EXTENT PERMITTED BY LAW, YOU AND THE COMPANY EACH WAIVE THE RIGHT TO A TRIAL BY JURY AND THE RIGHT TO BRING, JOIN, OR PARTICIPATE IN ANY CLASS, COLLECTIVE, CONSOLIDATED, OR REPRESENTATIVE ACTION."
+    },
+    {
+      "type": "body",
+      "text": "Mass Arbitration. If 25 or more demands for arbitration presenting similar facts or claims are filed against the Company by parties represented by the same or coordinated counsel, the parties agree that the demands will be administered in batches in accordance with the AAA’s rules and procedures applicable to mass arbitrations, including any supplementary fee schedules, with batching, bellwether, or other staged procedures as those rules provide."
+    },
+    {
+      "type": "body",
+      "text": "Opt-Out. You may opt out of this agreement to arbitrate and the class action waiver by sending an email to support@helloboe.com with your name and the email address associated with your Account, within 30 days of first accepting these Terms. Opting out of arbitration will not affect any other provision of these Terms. If the class action waiver is found unenforceable as to a particular claim, that claim (and only that claim) shall proceed in court, and the remainder of this Section shall continue to apply."
+    },
+    {
+      "type": "body",
+      "text": "These Terms, including all terms, policies, and guidelines referenced in these Terms, are the entire agreement between you and the Company concerning the use of the Platform and Services. These Terms supersede all prior Terms or communications between you and us regarding the subject matter of these Terms."
+    },
+    {
+      "type": "heading",
+      "text": "UPDATES TO THESE TERMS"
+    },
+    {
+      "type": "body",
+      "text": "We may revise, modify, change and update any portion of these Terms from time to time in our sole discretion. Your continued use of our Services after we publish or send a notice about our changes to these terms means that you are consenting to the updated terms as of their effective date."
+    },
+    {
+      "type": "body",
+      "text": "Your continued use of the Platform following the posting of revised Terms means that you accept and agree to the changes. You are expected to check our page from time to time so you are aware of any changes, as they are binding on you."
+    },
+    {
+      "type": "heading",
+      "text": "LINKS TO THIRD PARTY WEBSITES"
+    },
+    {
+      "type": "body",
+      "text": "Links from or to websites outside the Platform are meant for convenience only. This includes links contained in advertisements, including banner advertisements and sponsored links. We do not review, endorse, approve or control, and are not responsible for any sites or resources linked from or to the Platform, the content of those sites, the third parties named therein, or their products and services."
+    },
+    {
+      "type": "body",
+      "text": "If you choose to integrate third-party applications or services with the Platform, you agree to allow the Platform to access and use information provided through such integrations solely for the purposes of providing the Services. We commit to accessing only the information necessary for service delivery."
+    },
+    {
+      "type": "body",
+      "text": "If you decide to access any of the third-party websites linked to the Platform, you do so entirely at your own risk and subject to the terms and conditions of use for such websites."
+    },
+    {
+      "type": "body",
+      "text": "We assure users that the Platform and its Services, including any integrated third-party services, will not delete, alter, or modify the existing data in your Account with third-party services. Our access is limited to the information necessary for providing the Services. We respect the integrity and privacy of your data at all times and clearly explain how we interact with your data in our Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "Apple/Google Platform Terms. For iOS distribution, you acknowledge that (a) these Terms are between you and the Company, not Apple; (b) Apple has no obligation to furnish any maintenance or support services with respect to the App; (c) Apple has no warranty obligation whatsoever with respect to the App; and (d) Apple and its subsidiaries are third-party beneficiaries of these Terms and are entitled to enforce these Terms against you. Equivalent provisions apply with respect to Google and the Google Play Store to the extent required by Google’s distribution terms."
+    },
+    {
+      "type": "heading",
+      "text": "LIMITATION OF LIABILITY"
+    },
+    {
+      "type": "body",
+      "text": "Liability Cap. With the exception of any indemnification claim permitted under these Terms, to the maximum extent permitted by applicable law, in no event will the HelloBoe Parties be liable under any theory of liability, whether in an equitable, legal, or common law action arising hereunder for contract, strict liability, indemnity, tort (including negligence), attorneys' fees and costs, or otherwise, for damages which, in the aggregate, exceed the greater of (a) the amount of the fees paid by you in the 12  months preceding the claim for the Services which gave rise to such damages or (b) $100. To the maximum extent permitted by applicable law, in no event will the HelloBoe Parties be liable for any special, incidental, indirect, exemplary, punitive, or consequential damages of any kind and however caused, including, but not limited to, attorneys' fees and costs, business interruption or loss of profits, business opportunities, or goodwill. Nothing in this Section shall be construed to exclude or limit liability for personal injury caused by negligence or for willful misconduct, to the extent such exclusion or limitation is prohibited by applicable law."
+    },
+    {
+      "type": "heading",
+      "text": "INDEMNIFICATION"
+    },
+    {
+      "type": "body",
+      "text": "You agree to defend, indemnify and hold harmless the HelloBoe Parties from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses or fees (including attorneys’ fees) arising out of or relating to (a) your breach of the representations, warranties, or obligations set forth in these Terms; (b) your unlawful use of the Platform or Services; (c) your violation of any applicable laws or regulations in connection with your use of the Platform or Services; and (d) your violation of any rights of a third party."
+    },
+    {
+      "type": "heading",
+      "text": "FORCE MAJEURE"
+    },
+    {
+      "type": "body",
+      "text": "The Company will not be liable to you for any delay or failure to perform its obligations hereunder if such delay or failure arises from any cause or causes beyond the reasonable control of the Company. Such causes will include, but are not limited to, acts of God, floods, fires, loss of electricity, pandemic, epidemic, quarantines, lockdowns, or delays by you in providing required resources or support or performing any other requirements hereunder."
+    },
+    {
+      "type": "heading",
+      "text": "DISCLAIMED WARRANTIES"
+    },
+    {
+      "type": "body",
+      "text": "You understand that we cannot and do not guarantee or warrant that files available for downloading from the internet or the Platform will be free of viruses or other destructive code. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for anti-virus protection and accuracy of data input and output, and for maintaining an external means to the Platform for any reconstruction of any lost data."
+    },
+    {
+      "type": "body",
+      "text": "We will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of the Platform or any services or items obtained through the Platform or to your downloading of any material posted on it, or on any website linked to it."
+    },
+    {
+      "type": "body",
+      "text": "Your use of the Platform, its content and any services or items obtained through the Platform is at your own risk. The Platform, its content and any services or items obtained through the Platform (including, but not limited to, the documentation) are provided on an “as is” and “as available” basis, without any warranties of any kind, either express or implied. The HelloBoe Parties make no warranty or representation with respect to the completeness, security, reliability, quality, accuracy or availability of the Platform. Without limiting the foregoing, the HelloBoe Parties do not represent or warrant that the Platform, its content or any services or items obtained through the Platform will be accurate, reliable, error-free or uninterrupted, that defects will be corrected, that the Platform or the server that makes it available are free of viruses or other harmful components, or that the Platform or any services or items obtained through the Platform will otherwise meet your needs or expectations."
+    },
+    {
+      "type": "body",
+      "text": "The Company hereby disclaims all warranties of any kind, whether express or implied, statutory or otherwise, including but not limited to any warranties of merchantability, non-infringement and fitness for a particular purpose."
+    },
+    {
+      "type": "body",
+      "text": "The foregoing does not affect any warranties which cannot be excluded or limited under applicable law."
+    },
+    {
+      "type": "heading",
+      "text": "LIMITED USE DISCLOSURE"
+    },
+    {
+      "type": "body",
+      "text": "By using the Platform, you agree to adhere to any third-party integrations you choose to utilize in connection with the Platform, including the applicable third-party integration’s user data policies and limited use requirements."
+    },
+    {
+      "type": "heading",
+      "text": "AI DISCLOSURE"
+    },
+    {
+      "type": "body",
+      "text": "AI-Powered Services. The Company utilizes artificial intelligence, large language models, machine learning, and related technologies as a core feature of the Services. These AI Systems are integral to the functionality of the Platform and Services, including but not limited to the Boe conversational feature, child development tracking and insights, content personalization, analytics and other AI-driven features. Boe is an artificial intelligence assistant; its outputs are machine-generated and may be inaccurate, incomplete, or inappropriate, and are subject to Section 28 in full. Boe is designed to provide general informational parenting guidance only, and is not a substitute for professional medical, psychological, or legal advice. AI-generated Output is probabilistic in nature and may not always be accurate, complete, or appropriate for your circumstances. You should not rely on Output from Boe as a sole source of truth. By accessing or using the Platform or Services, you acknowledge and agree that AI Systems are used extensively throughout the Services and that your User Data will be used in connection with such AI Systems as described in these Terms and in our Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "AI Data Processing. Conversations with Boe and profile data are processed by a third-party AI service provider in the United States as described in the Privacy Policy. You are responsible for the content of messages you transmit to Boe; messages are transmitted as typed. You agree not to submit personal information about any person other than yourself and your own Child through Boe, and you are advised not to include unnecessary sensitive details. Boe maintains cross-session memory and builds an evolving, inferred profile of your Child to personalize guidance; please refer to the Privacy Policy’s inferences disclosure for additional information regarding automated profiling. Boe must not be relied on for urgent or emergency situations."
+    },
+    {
+      "type": "body",
+      "text": "Training License. We do not currently use your User Data to train our own large language models or other AI Systems. By using the Platform or Services, you grant the Company a non-exclusive, royalty-free, fully paid-up license, exercisable only if the Company elects to conduct such training in the future, to use, copy, modify, and create derivative works from your User Data solely in de-identified, anonymized, and/or aggregated form, expressly excluding PII in identifiable form and any identifiable Child PII,  to train, develop, refine, improve, and enhance the Company's AI Systems, including LLM models, machine learning algorithms, and related technologies (the “Training License”). This includes, without limitation: (a) using your interactions with Boe and other Platform features to train AI Systems to generate and optimize parenting guidance and suggestions; (b) analyzing prompts, search terms, and user preferences to improve the accuracy, relevance, and performance of AI-generated outputs; (c) incorporating de-identified or aggregated data derived from your User Data into training datasets used to develop new AI features, capabilities, and products; (d) using aggregated, de-identified, and/or anonymized versions of your User Data as inputs for model training and validation; and (e) any other AI and LLM training purposes described in our Privacy Policy. We take the following measures to protect privacy in connection with AI training: (a) we remove or de-identify PII, including Child PII, before incorporating data into training datasets; (b) we do not use Child PII in an identifiable form to train AI models; and (c) we do not allow third-party AI partners to use your data for training their own AI models. You may opt-out of the use of your User Data for AI training purposes by contacting us at support@helloboe.com. Any opt-out shall operate on a prospective basis; de-identified or aggregated data that has already been incorporated into AI Systems or training datasets, and that cannot reasonably be linked to you or your Child, may not be practicable to identify or extract. Nothing in this Section limits your right to deletion of your or your Child’s identifiable personal information under Section 7.7, the Privacy Policy, or applicable law."
+    },
+    {
+      "type": "body",
+      "text": "Third-Party AI and Technology Partners. We may utilize third-party AI service providers to perform core AI-related functions of the Services, including powering the Boe conversational feature. In order to operate Boe, information transmitted to our AI service provider may include your Child’s first name, age, sex, temperament profile and scores, related conversation context and memory, and the contents of your messages as typed, as further described in the Privacy Policy. Our AI technology partners are contractually prohibited from using data received from us to train their own models. Service providers are disclosed by category in the Privacy Policy, which may be updated from time to time; vendor substitutions within disclosed purposes do not require re-consent, but new purposes do. By utilizing the Platform or Services, you expressly consent to and agree that the following information may be shared with our AI and technology partners:"
+    },
+    {
+      "type": "body",
+      "text": "Profile information (including your Child’s first name, age, sex, and temperament profile and scores), to the extent necessary for AI Systems to perform the requested Services;"
+    },
+    {
+      "type": "body",
+      "text": "Your Input, including prompts and interactions with Boe and other AI-powered features of the Platform, transmitted as typed;"
+    },
+    {
+      "type": "body",
+      "text": "De-identified and aggregated usage data and analytics;"
+    },
+    {
+      "type": "body",
+      "text": "Any other User Data necessary for the AI Systems to perform the requested Services, with Child PII shared only to the extent described in this Section and the Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "The Company retains exclusive ownership of all Company IP resulting from such use, subject to the Training License."
+    },
+    {
+      "type": "body",
+      "text": "Third-Party Data Sharing for Product and Service Improvement. You acknowledge and agree that the Company may share your User Data with trusted third-party partners, service providers, analytics partners, and vendors who assist the Company in operating its business, providing the Services, conducting analytics, and developing the Company's products. You expressly consent to such third-party partners receiving and using your User Data — prompts, usage data, and other information, excluding identifiable Child PII except as necessary to provide the Services and subject to the protections described in this Section — to assist the Company in improving, developing, and optimizing the Services and products. This includes, without limitation, the use of your User Data by third-party partners to conduct research, perform analytics, and support the development and improvement of the Services on the Company's behalf, subject to applicable confidentiality obligations. With respect to Child PII, any third-party service provider that collects or maintains Child PII on our behalf is required to provide written assurances that they will maintain the confidentiality, security, and integrity of such information. We do not disclose Child PII to third parties for marketing or promotional purposes. A parent or legal guardian has the right to consent to the collection and use of their Child’s PII without consenting to the disclosure of that information to third parties. Except where disclosure to a third party is integral to the provision of the Services (e.g., cloud hosting necessary to deliver the Platform), we will obtain separate, opt-in consent before disclosing a Child’s PII to any third party. Parents may revoke consent to third-party disclosure at any time by contacting us at support@helloboe.com. The Company shall retain exclusive ownership of all Company IP and all rights under the Training License."
+    },
+    {
+      "type": "body",
+      "text": "For more details on how we handle and protect your data, including a comprehensive description of our data practices and your rights, please refer to our Privacy Policy. Additionally, please review the privacy policies of our third-party AI partners for more information."
+    },
+    {
+      "type": "heading",
+      "text": "OWNERSHIP OF COMPANY IP"
+    },
+    {
+      "type": "body",
+      "text": "You acknowledge and agree that the Company shall exclusively own all rights, titles, and interest in and to any and all Company IP. No user shall acquire any rights, titles, or interests in or to any Company IP by virtue of providing User Data, granting the Training License, or using the Platform or Services."
+    },
+    {
+      "type": "body",
+      "text": "For the avoidance of doubt, you retain all ownership in and to your original, unprocessed personal information and your Input and Output. The Company’s rights arise from the Training License granted in Section 24.3 and the Company’s exclusive ownership of Company IP, and not from any claim of ownership over your User Data."
+    },
+    {
+      "type": "body",
+      "text": "Any Training License extends to any and all processed, aggregated, de-identified, anonymized, or derivative versions of your data that are incorporated into or used to develop Company IP. Once your data has been incorporated into AI Systems or aggregated datasets, it may no longer be practicable to identify or extract individual user data, and you acknowledge that the Training License with respect to such data shall remain in effect."
+    },
+    {
+      "type": "body",
+      "text": "Company's ownership of Company IP, the Training License, and the provisions of Section 25 shall survive any termination or expiration of these Terms or your use of the Services."
+    },
+    {
+      "type": "body",
+      "text": "Upon any termination, expiration, or discontinuation of your subscription or access to the Account, Platform, and/or Services: (a) all Company IP, including AI Systems, model improvements, and derivative works developed during the term of your use, shall remain the sole and exclusive property of the Company; (b) the Training License shall remain in effect with respect to all de-identified, anonymized, or aggregated data derived from User Data provided prior to termination; and (c) you may request deletion of your identifiable personal information in accordance with our Privacy Policy and applicable data protection laws. Nothing in this Section limits the Company’s obligation to delete identifiable personal information, including Child PII, in accordance with Section 7.7, the Privacy Policy, and applicable law; de-identified or aggregated data that cannot reasonably be linked to you or your Child is not subject to deletion requests."
+    },
+    {
+      "type": "heading",
+      "text": "ASSIGNMENT; CHANGE OF CONTROL"
+    },
+    {
+      "type": "body",
+      "text": "The Company may assign these Terms in connection with a merger, acquisition, or sale of assets; you may not assign these Terms. Any successor takes user data subject to the then-current Privacy Policy; materially broader use of previously collected data requires fresh consent and notice to you by the Company."
+    },
+    {
+      "type": "heading",
+      "text": "AFFILIATE AND THIRD-PARTY MARKETING"
+    },
+    {
+      "type": "body",
+      "text": "Any affiliate, reseller, agency, contractor, or other third party acting on your behalf must comply with these Terms, including the restrictions on unsolicited, commercial, and spam communications set forth in Section 4. You are responsible for their conduct. We may immediately suspend or terminate Accounts and void commissions or incentives that arise from activities violating this requirement."
+    },
+    {
+      "type": "heading",
+      "text": "NO PROFESSIONAL ADVICE"
+    },
+    {
+      "type": "body",
+      "text": "The Platform, Services, and all related content, including all Output generated by Boe or any other AI System, are for general educational and informational purposes only and are not medical, psychological, or other developmental advice, diagnosis, screening, or treatment; and no provider-patient relationship is created. For clarity, the temperament, profile, scores, quiz, and any related guidance are intended only as a general, non-clinical lens to help you understand your Child’s tendencies, and are not a clinical or medical assessment, diagnosis, screening, or evaluation. You should seek the advice of a qualified health care provider or other appropriate professional with respect to any questions you may have regarding any medical condition, parenting concern, or other matter, and you should call emergency services (911) in an emergency. You should not ignore professional advice or delay in seeking it because of any information or Output provided through the Platform or Services. Furthermore, you should not interpret any information or Output provided through the Platform or Services as recommending any specific treatment plan, product, or course of action. Parenting decisions remain solely the parent’s responsibility; outcomes are not guaranteed. If you believe you or your child are experiencing any negative effects from following any guidance provided through the Platform, you should immediately stop relying on such guidance and contact your physician or other qualified professional."
+    },
+    {
+      "type": "heading",
+      "text": "CHANGES TO THE SERVICE"
+    },
+    {
+      "type": "body",
+      "text": "The Company reserves the right to modify or discontinue features of the Platform or Services, with notice of material reductions in functionality. Data export shall remain available to you before any discontinuation of the Services."
+    },
+    {
+      "type": "heading",
+      "text": "CONTACTING US"
+    },
+    {
+      "type": "body",
+      "text": "If you wish to contact us regarding any questions or concerns about these Terms, the Services, or you or your child’s PII, please write to us at support@helloboe.com."
+    }
+  ]
+}

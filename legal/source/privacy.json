@@ -1,0 +1,397 @@
+{
+  "key": "privacy",
+  "title": "Privacy Policy",
+  "lastRevised": "June 30, 2026",
+  "consentVersion": "2.0",
+  "source": "HelloBoe - Privacy Policy (06-30-26).docx",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "INTRODUCTION AND OVERVIEW."
+    },
+    {
+      "type": "body",
+      "text": "We are very pleased that you are interested in our application and website and thus in our company, HelloBoe, Inc., https://helloboe.com/ (“HelloBoe”, “Company”, “we”, “us” or “our”) as well as any other subdomains for HelloBoe.com (collectively, the “Website(s)”). The “App” means the Company’s native mobile application(s) for iOS and Android, distributed through the Apple App Store and Google Play. The App, together with the Website, are collectively referred to herein as the “Platform”. The Platform provides parents and caregivers with tools and resources relating to child development, parenting guidance, child temperament, behavior, family wellness, and related product recommendations (collectively, the “Services”). The Services are designed for use by adults, including parents and caregivers (each an “Adult User”) who may input information on behalf of or about their minor children (each, a “Child”). The Platform is not intended for use directly by children, and children may not register for or use the Services independently. Our paramount commitment lies in ensuring privacy and trust, specifically in the handling of sensitive and confidential information, such as your PII (also known as personally identifiable information or “PII”), and that of your children. As used in this Privacy Policy, “PII” means information that identifies, relates to, describes, or can reasonably be linked to an identified or identifiable individual, including the information described in this Privacy Policy. In this comprehensive Privacy Policy, we detail our approach to data security and confidentiality. If you have any questions or concerns about our Privacy Policy, or our practices with regard to your PII, please contact us at support@helloboe.com."
+    },
+    {
+      "type": "body",
+      "text": "Our Privacy Policy is intended to provide a transparent overview of our data practices. This includes a detailed breakdown of the types of data we collect from you and about your children, the explicit purposes for which it is utilized (including for analytics and service improvement), and the duration for which it is retained. We also outline your rights in relation to the data you entrust to us, offering avenues for access, correction, and deletion in alignment with applicable regulatory frameworks."
+    },
+    {
+      "type": "body",
+      "text": "We operate the Services from the United States, and the information we collect is stored and processed in the United States. Our cloud infrastructure is hosted in a single United States region, and our third-party service providers are United States-based. If you access the Services from outside the United States, you understand that your information will be transferred to, stored, and processed in the United States. The following sections of this Privacy Policy stipulate the intricacies of our privacy measures, elucidating the specific protocols in place to safeguard your information including encryption methodologies, stringent access controls, and the precise limitations applied to data sharing practices."
+    },
+    {
+      "type": "heading",
+      "text": "ACCEPTANCE OF POLICY."
+    },
+    {
+      "type": "body",
+      "text": "By using or accessing the Platform or Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and that we may collect, use, and share your information as detailed herein. This includes your consent to the use of your data – including prompts, conversations, responses, PII, usage data, and related content you provide through the Platform – for analytics, service improvement, product development, and to provide the AI-powered features of the Platform (including the “Boe” assistant) as detailed in this Privacy Policy. The personal information of children is collected, used, and disclosed only as described in this Privacy Policy, including the Children’s Information section herein. If you do not agree to the terms of this Privacy Policy, then you should not use our Platform. By visiting and using our Platform, you agree that your use of our Platform and any disputes over privacy shall be governed by this Privacy Policy. Any new changes or modifications which are added to the current Services shall also be subject to this Privacy Policy or as otherwise determined by us."
+    },
+    {
+      "type": "body",
+      "text": "HelloBoe reserves the right to suspend, restrict, or terminate your access to the Platform and/or Services, in whole or in part, at any time and without prior notice, if HelloBoe determines, in its sole discretion, that: (a) you have violated any provision of this Privacy Policy or any other applicable agreement with HelloBoe; (b) your use of the Platform or Services poses a security risk or may cause harm to the HelloBoe Parties, other users, or third parties; (c) you have engaged in any fraudulent, abusive, or unlawful activity in connection with our Services or Platform; (d) continued provision of the Services to you is no longer commercially viable; or (e) such action is required to comply with applicable law or a governmental request. In the event of any such suspension or termination, all provisions of this Privacy Policy relating to limitation of liability, indemnification, and data retention shall survive. As used in this Privacy Policy, “HelloBoe Parties” means HelloBoe, Inc. and each of its respective directors, officers, shareholders, employees, agents, affiliates, successors, and assigns."
+    },
+    {
+      "type": "heading",
+      "text": "INFORMATION WE COLLECT."
+    },
+    {
+      "type": "body",
+      "text": "We collect PII directly from you when you provide it to use the Services, automatically as you navigate through our Platform, or if you communicate with us. Because our Services are designed for parents and caregivers to input information on behalf of their minor children, we collect information from both Adult Users and about Children."
+    },
+    {
+      "type": "body",
+      "text": "Voluntarily Provided Information – Adult Users. We collect PII in connection with our Services, including information that you upload or provide to us, including but not limited to: your name, email address, account credentials, authentication settings, your goals or preferences for using the Platform (such as topics you want to better understand, including temperament, behavior, food, travel, toy preferences, or a child’s strengths), payment and subscription information, transaction history, and other relevant details which may be used when you purchase products and/or services and otherwise use the Platform. If you use a third-party sign-in option, such as Apple or Google, we may receive information made available by that third-party login provider. All purchases are processed through the Apple App Store and Google Play in-app billing systems; we do not collect or receive your payment card or financial account information, and we receive only your subscription or entitlement status. This information is used to facilitate account creation, authentication, subscriptions, the purchase and delivery of products or services you have requested, and to enhance the overall service we provide."
+    },
+    {
+      "type": "body",
+      "text": "Voluntarily Provided Information – Children. Through our Services, Adult Users may provide us with PII about their children, including but not limited to a child’s name or nickname, date of birth, age or age range (such as under 4 months, between 4 and 36 months, or over 3 years), sex, developmental milestones, behavioral or temperament information, wellness-related information (such as sleep, feeding schedules, social interactions, and similar information), preferences, answers to onboarding or assessment questions, and related information used to help identify the child’s personality type, strengths, or “superpower” and adapt the Services as the child grows. A child’s date of birth and sex constitute sensitive personal information (“Sensitive PII”), which we handle as described in the Children’s Information section below. The initial onboarding experience may include an assessment questionnaire, and certain questions may be optional or skippable. We do not currently permit users to upload photos or videos of children through the Platform. We only collect PII about children that is reasonably necessary to provide our Services, and we do not condition a child’s participation in any activity on the disclosure of more PII than is reasonably necessary to participate in that activity. We do not collect biometric identifiers or government-issued identification numbers from children."
+    },
+    {
+      "type": "body",
+      "text": "Automatically Collected Information. The Services are provided primarily through a native mobile application, which does not use browser cookies. When you use the Services, we and our service providers automatically collect certain information through your device and through software development kits (SDKs) integrated into the App, including a persistent device identifier, app and device metadata, and usage information. Our marketing and policy website does not currently set advertising or analytics cookies. We do not use the identifiers we collect for behavioral or targeted advertising, and we do not serve behavioral or targeted advertising. This information includes:"
+    },
+    {
+      "type": "body",
+      "text": "Device Information. We collect device data including, device name, operating system, device identifiers, hardware and software settings, web browser, and configurations."
+    },
+    {
+      "type": "body",
+      "text": "Usage Data. We collect information about your use and activity across the Services, our Platform, and products, such as the type of features you utilize, frequency of feature use, and times of access, the pages you view, your actions, and the dates and times that you visit, access, or use the Services through our Platform. As described below, our usage analytics are pseudonymous and our analytics provider receives an internal identifier rather than your name, email, or a child’s date of birth."
+    },
+    {
+      "type": "body",
+      "text": "Location Information. We may determine your general location when accessing our Services based on your device’s IP address or similar information. We do not collect precise geolocation through the Platform. If we later make a feature available that requires precise geolocation, we will update this Privacy Policy and obtain any required consent before collecting it."
+    },
+    {
+      "type": "body",
+      "text": "Third-Party Tracking Technologies. We do not permit third-party advertising networks to collect information through the Services, and we do not serve behavioral or targeted advertising. The third-party SDKs we integrate (such as our analytics and error-monitoring providers) collect only the limited information described in this Privacy Policy and the Who We Share Your Information With section, and are contractually limited to using it to provide services to us."
+    },
+    {
+      "type": "body",
+      "text": "Inferences and Derived Information. As you and your child use the Services, our AI-powered features build an evolving understanding of the child over time, including cross-session memory and inferred signals about temperament, preferences, and developmental stage. These inferences are drawn from the information described above to create a profile reflecting the child’s characteristics and to personalize the guidance Boe provides. This per-child profile is used to operate and personalize the Services for the applicable Adult User and is not used for advertising."
+    },
+    {
+      "type": "body",
+      "text": "Demographic Information. We do not collect demographic information today. In the future, we may ask you to provide certain demographic information, such as your country and primary language, through an optional prompt within the App. If we do, that information will be associated with your account, its collection will be optional, and we will provide notice and obtain any required consent at the time of collection. We do not use demographic information for advertising."
+    },
+    {
+      "type": "heading",
+      "text": "HOW WE USE YOUR INFORMATION."
+    },
+    {
+      "type": "body",
+      "text": "We use your PII as permitted under applicable law. We always ensure that we have a lawful basis for use of any PII. We collect and use PII with your consent. You can revoke your consent at any time (either through our Services directly or by contacting us via email: support@helloboe.com), though note that you might not be able to use any Service or feature that requires collection or use of that PII. We do not use your data to train our own large language models, and we do not sell your PII or the personal information of children. If we make de-identified or aggregated data available for advertising purposes in the future, we will do so only as described in Section 10 and subject to the choices described in this Privacy Policy. We use the PII we collect or receive to:"
+    },
+    {
+      "type": "body",
+      "text": "Business and Operational Purposes. We may use your PII and data to assist with the operation of our Platform and to provide, analyze, and maintain our Services and products, examples which may include to: enter into a contract with you, allow you to set up a user account and profile, fulfill your requests for products and services, process payments, analyze how you use the Services, understand user interest and engagement on the Services, research and develop Services, improve and streamline our Services, verify your identity and prevent fraud, detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, ensure quality control, debug to identify and repair errors, to enforce this Privacy Policy, terms and conditions and other applicable policies, and audit or other compliance activities."
+    },
+    {
+      "type": "body",
+      "text": "AI-Powered Features (“Boe”). Our Platform includes an AI-powered feature called “Boe,” which allows parents and caregivers to engage in conversational interactions to receive general parenting guidance, ideas, and suggestions. Boe is powered by a third-party artificial intelligence provider, Anthropic, PBC (“Anthropic”), which processes the relevant information on our behalf in the United States in order to generate responses. To provide and personalize Boe, information about the applicable child profile, onboarding or assessment answers, conversation history, and the parent’s current message are processed to generate and adapt guidance as the child grows. By using the Services or Platform, you consent to the processing of your data – including prompts, responses, conversations, metadata, usage data, assessment responses, and other content you provide through the Platform – to provide, personalize, operate, and improve the AI-powered features of the Platform and our Services (the AI-powered features, the “AI Systems”). As used in this Privacy Policy, “Input” means any content, data, text, prompts, or other materials that you provide to or upload into the AI Systems, and “Output” means any content generated by the AI-powered features in response to or based on your Input. As between you and the Company, you retain ownership of your Input and Output, and the Company does not claim ownership of them. We use your Input and Output to operate and personalize Boe, to maintain conversation history and the evolving child profile that allows Boe to adapt over time, to provide, secure, troubleshoot, and improve the Services, and as otherwise described in this Privacy Policy. We do not sell your Input or Output, and we do not use them to train our own large language models. What is transmitted to Anthropic. Each time you interact with Boe, we transmit to Anthropic (in the United States) the child’s first name, the child’s computed age and age band, the child’s sex or pronoun, the child’s temperament profile and scores, recent conversation history and cross-session memory, any life-context you have provided, and the message you type, exactly as you type it. We do not transmit the child’s raw date of birth (only the computed age). Because we do not automatically filter what you type, any additional personal information you choose to include in a message to Boe will be transmitted to Anthropic as part of that message; please do not enter information you do not wish to share. Anthropic processes this information only to generate Boe’s responses for us and in accordance with our instructions and, under its commercial terms and Anthropic’s Data Processing Addendum, does not use it to train its models and deletes it within thirty (30) days following termination of our agreement, except where retention is required by law, necessary to resolve a dispute, or necessary to address harmful use of its services. We take the following measures to protect privacy in connection with the AI-powered features: (a) we transmit to Anthropic only the information needed to generate Boe’s responses, and we do not transmit a child’s raw date of birth; (b) we rely on Anthropic’s commercial terms, under which Anthropic does not use the information we transmit to train its own models; (c) we do not use your Input or Output to train our own large language models; and (d) we do not sell your Input or Output or the personal information of children. Boe may identify certain health- or safety-related concerns and recommend that the user contact a doctor, seek emergency assistance, or consult another qualified professional. Important: Boe is designed to provide general informational guidance only and is not a substitute for professional medical, psychological, emergency, or legal advice. AI-generated Output is probabilistic in nature and may not always be accurate, complete, or appropriate for your specific circumstances. You should not rely on Output from Boe as a sole source of truth."
+    },
+    {
+      "type": "body",
+      "text": "Analytics and Service Improvement. We use your PII and data to conduct analytics and research to improve and develop our Services, Platform, and products, including to: (a) analyze how you use the Services and Platform; (b) understand user interest, engagement, and behavior patterns across the Services; (c) analyze prompts, conversations, assessment responses, and usage data to identify trends, optimize performance, and improve AI-generated outputs; (d) develop new features, functionalities, and products; (e) personalize and customize your experience across our Services; and (f) create de-identified, anonymized, and aggregated datasets for statistical analysis, benchmarking, and internal research."
+    },
+    {
+      "type": "body",
+      "text": "Product Development and Personalization. We use your data, including PII, to improve our Services, Platform, and products, conduct research, develop new features, and personalize your experience. This includes using analytical insights derived from your use of the Services, including child age range, temperament, preferences, assessment responses, developmental-stage questionnaires, and usage patterns, to tailor parenting guidance, toy or product recommendations, and other recommendations, optimize AI performance for your specific use case, and enhance the overall functionality of our Platform and Services."
+    },
+    {
+      "type": "body",
+      "text": "Administrative Purposes. We may use your PII to send you information regarding the Services, account features, subscription status, security features, daily insights, engagement nudges, follow-ups from Boe, reminders you ask Boe or the Platform to set, and check-in prompts about behaviors or topics flagged by an Adult User."
+    },
+    {
+      "type": "body",
+      "text": "Marketing Communications. We may use your PII to send you information on new products, services, toy or product recommendations, affiliate-linked offers, and potential new offers that may be available and of interest to you, engage in marketing and sales outreach, and provide customized content, offers, or services including marketing content via email, in-app messages, push notification, or other channels we make available, subject to applicable laws and your communication preferences. Marketing email is off by default, and we send marketing email only to users who have affirmatively opted in through the privacy settings in the App; every marketing email includes a way to unsubscribe. If you consent or show interest in presented offers, then, at that time, specific identifiable information, such as your name and email address, may be shared with the third party. We may also contact you to complete surveys and/or research questionnaires related to your opinion of current or potential future services that may be offered."
+    },
+    {
+      "type": "body",
+      "text": "Protection Purposes. We retain the right to disclose your PII or any other information, without prior notice to you, only if required to do so in accordance with applicable laws and in a good faith belief that such action is deemed necessary or is required to remain in conformance with any decrees, laws and/or statutes, or to comply with any process which may be served upon our Platform; maintain, safeguard, and preserve all the rights and property of the HelloBoe Parties; and perform under demanding conditions to safeguard the personal safety of users or other visitors of our Platform and the general public. You agree and acknowledge that we, the HelloBoe Parties, shall not be liable for any harm, loss, or damage of any nature caused to you due to disclosure of information in the above stated circumstances."
+    },
+    {
+      "type": "body",
+      "text": "Use of Children’s Information. We use children’s PII solely for the purpose of providing and improving the Services, including to: (a) deliver the core features of our Platform relating to child development tracking, temperament assessment, wellness-related insights, and parenting resources; (b) generate or support age- and temperament-informed guidance, personality type or “superpower” insights, and toy or product recommendations for the applicable Adult User; (c) adapt advice and recommendations as the child grows, including through developmental-stage questionnaires; (d) customize and improve the user experience for the applicable Adult User; and (e) maintain the security and integrity of the Platform. We do not use children’s PII for marketing, advertising, or any purpose unrelated to the provision of the Services, and we do not sell or share the personal information of children."
+    },
+    {
+      "type": "body",
+      "text": "Retention, De-Identification, and Deletion of Children’s Information. We retain children’s PII only for as long as reasonably necessary to provide and improve the Services, allow the child’s continued participation in the applicable feature, maintain the safety, security, and integrity of the Platform, comply with legal obligations, resolve disputes, and enforce applicable agreements, after which we delete or de-identify it. Before using data derived from children’s PII for analytics, research, product development, or service improvement, we remove direct identifiers and take reasonable measures to prevent the data from identifying a child; we do not use children’s PII to train our own large language models or disclose it in identifiable form for any third party’s model training, and we do not attempt to re-identify de-identified data. Upon a verified parental request or deletion of a child’s profile, we delete or de-identify the child’s PII and any Input that can be used to identify the child from active systems within a reasonable time, except where retention is required by law or to protect safety, security, or the integrity of the Platform. Where a service provider processes children’s PII on our behalf, we require written assurances that it will keep the information confidential and secure, use it only for the authorized purpose and not for its own model training, marketing, or unrelated purposes, and delete, return, or de-identify it upon our instruction."
+    },
+    {
+      "type": "heading",
+      "text": "WHO WE SHARE YOUR INFORMATION WITH."
+    },
+    {
+      "type": "body",
+      "text": "Third Parties Generally. We may share your data with our trusted third-party partners, service providers, and vendors who assist us in operating our business, providing the Services, processing payments, authenticating users, conducting analytics, supporting the AI-powered features, and developing our Platform and products, including app store providers, third-party login providers such as Apple and Google, payment card networks, online payment providers, authentication services, cloud hosting providers, our AI provider, analytics providers, customer support tools, and affiliate-link or product recommendation partners if such features are made available. Those third parties are service providers or contractors that are contractually prohibited from making use of your PII other than to deliver the services we request, and are required to maintain the confidentiality, security, and integrity of your information. With respect to the personal information of children, we disclose such information only to service providers and contractors when the disclosure is necessary to provide the Services or as required for safety, security, legal, or compliance purposes. Any service provider or contractor that collects or maintains the personal information of a child on our behalf is required to provide written assurances that it will maintain the confidentiality, security, and integrity of such information. We do not sell or share the personal information of children, and we do not sell or share the personal information of any consumer we know to be under 16 years of age. We only share and disclose your PII with the following third parties. We have categorized each party so that you may easily understand the purpose of our data collection and processing practices."
+    },
+    {
+      "type": "body",
+      "text": "The following is a summary of the third parties with whom we share information and the information each receives. We may update this list from time to time."
+    },
+    {
+      "type": "body",
+      "text": "Anthropic (AI assistant). Our AI provider receives, on each interaction with Boe, the child’s first name, sex or pronoun, computed age and age band, temperament profile and scores, conversation history and cross-session memory, life-context, and the parent’s typed messages as typed. This is the most sensitive of our data flows. We do not transmit the child’s raw date of birth. Anthropic processes this information solely to provide the service to us and, under its commercial terms, does not use it to train its models."
+    },
+    {
+      "type": "body",
+      "text": "Supabase (cloud hosting). Our cloud hosting provider stores our first-party dataset (including parent email, child name, date of birth and sex, profiles, scores, chat, memory, and subscription records) in the United States (AWS US East / N. Virginia)."
+    },
+    {
+      "type": "body",
+      "text": "Mixpanel (analytics). Our analytics provider receives pseudonymous identifiers (a device identifier and our internal user identifier), device and app metadata, and non-identifying properties (such as profile type, age in months, and plan). It does not receive any name, email address, or date of birth, and IP addresses are suppressed."
+    },
+    {
+      "type": "body",
+      "text": "RevenueCat (subscriptions). Our subscription-management provider receives our internal user identifier and subscription or entitlement status. It does not receive any card or payment data."
+    },
+    {
+      "type": "body",
+      "text": "Sentry (error monitoring). Our error-monitoring provider receives crash and error data, with user context limited to profile type and age band. Names, email addresses, dates, and tokens are redacted before transmission."
+    },
+    {
+      "type": "body",
+      "text": "Expo and Apple / Google push services (APNs / FCM). Our push-notification provider and the Apple and Google push transport services receive the push token and the notification title and body, which may contain the child’s first name and age and any reminder text you provide."
+    },
+    {
+      "type": "body",
+      "text": "Apple / Google (sign-in). When you use a third-party sign-in option, Apple or Google verifies your identity and issues tokens to us; we store the resulting email address (and the first name Apple provides on first sign-in) but do not retain the raw tokens."
+    },
+    {
+      "type": "body",
+      "text": "Apple App Store / Google Play (payments). All card and payment data is handled by Apple or Google; we receive only your entitlement status and no card or payment data ever reaches us."
+    },
+    {
+      "type": "body",
+      "text": "Resend (email delivery). Our email-delivery provider receives your email address and the contents of the emails we send you in order to deliver authentication and transactional emails, and, if and when we activate marketing or lifecycle email and you have opted in, to deliver those messages as well."
+    },
+    {
+      "type": "body",
+      "text": "Analytics and Data Partners. We may share your data with third-party analytics partners to conduct statistical analysis, generate insights, measure performance, and improve our Services and products. Our analytics partners receive only pseudonymous identifiers and non-identifying properties as described above, and are prohibited from using the data for any other purpose."
+    },
+    {
+      "type": "body",
+      "text": "Service Providers. We may share your PII with third-party service providers and contractors who assist us in operating our business, including cloud hosting providers, app store providers, payment processors, payment card networks, online payment providers, third-party login providers, authentication providers, our AI provider, analytics providers, customer support tools, and other vendors. Such service providers and contractors are contractually required to use your data solely for the purposes of providing services to us and to maintain appropriate security measures."
+    },
+    {
+      "type": "body",
+      "text": "Business Partners. We may share or transfer your PII in connection with, or during your use of our Services for, facilitating identity verification, payment processing, third-party login, product recommendations, and affiliate-linked offers if such features are made available. If product recommendation features include affiliate links, we may receive a commission or other benefit when Adult Users interact with or purchase products through those links, subject to applicable law and the children’s-data limitations in this Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "Shared Caregivers and Account Participants. At present, each child’s records are owned by a single parent account, and the Services do not include a feature allowing a second adult to be linked to or access a child’s profile. We may in the future offer a feature that allows a primary account holder to grant another adult access to a child’s profile, assessment responses, Boe conversation history, recommendations, and related account information. If we make such a feature available, the primary account holder would control and be able to revoke that access, and any linked adult’s access would be subject to this Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "Purchasers of Our Business. We may share or transfer your PII to an acquirer, successor, or assignee/licensee in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company. In such case, we will require that your rights under this Privacy Policy and applicable law are not diminished, and the recipient’s use of the personal information of children will remain subject to the limitations in this Privacy Policy and applicable law."
+    },
+    {
+      "type": "body",
+      "text": "Law Enforcement. We may share your PII in order to comply with our legal, compliance, regulatory, insurance policy, and record-keeping obligations as well as to respond to mandatory legal or governmental requests or demands for information, enforce our agreements, policies, procedures, and terms of use, and protect the HelloBoe Parties, our users, or the general public from illegal activities."
+    },
+    {
+      "type": "body",
+      "text": "Parties Pursuant to Protecting Our Legal Rights. We may also need to share your PII with third parties in relation to the need to protect the legal rights of the HelloBoe Parties (which may include attorneys and debt collection agencies). This is done in the legitimate interest of the HelloBoe Parties to protect their legal rights and ensure the performance of this Privacy Policy and any other agreements related to our Services."
+    },
+    {
+      "type": "body",
+      "text": "Parties Pursuant to Our Legal Obligations. We may need to share your PII with third parties in order to fulfill our legal obligations. Such third parties may include auditors, national regulators, or other authorities."
+    },
+    {
+      "type": "body",
+      "text": "Information Governed by Apple and Google. Certain functions of the Platform are provided by Apple and Google and are governed by their respective privacy policies rather than this Privacy Policy, including sign-in identity and credential exchange, all payment and card data (handled through the Apple App Store or Google Play, such that we receive only your entitlement status), and the delivery transport for push notifications. We encourage you to review Apple’s and Google’s privacy policies for information about how they handle your data. We are the business responsible for: your parent email and first name; a child’s name, date of birth, and sex; profiles, scores, chat, and memory; subscription records; the pseudonymous identifiers we send to analytics and subscription providers; and the notification copy (which may contain a child’s first name) that we hand to the push pipeline."
+    },
+    {
+      "type": "heading",
+      "text": "DO-NOT-TRACK"
+    },
+    {
+      "type": "body",
+      "text": "Your browser may offer you a “Do Not Track” option, which allows you to signal to operators of websites and web applications and services (including behavioral advertising services) that you do not wish such operators to track certain of your online activities over time and across different websites. At this time, we neither respond to nor honor Do-Not-Track signals from web browsers. Some browsers and devices may also transmit universal opt-out signals, such as the Global Privacy Control (GPC), that communicate a consumer’s choice to opt out of the sale or sharing of personal information or of targeted advertising. Because we do not sell or share your personal information and do not engage in targeted advertising, there is no such processing for a universal opt-out signal to apply to. If we begin any activity in the future for which applicable law requires us to honor these signals, we will update this Privacy Policy and honor them as required."
+    },
+    {
+      "type": "heading",
+      "text": "INFORMATION COLLECTED FROM THIRD PARTIES"
+    },
+    {
+      "type": "body",
+      "text": "If you access our Services through a third party or social networking website, including by using a third-party sign-in option such as Apple or Google, we may collect information about you from that third-party application if that information has been made available to us through your privacy settings or authorization with that third party. We may receive information about you from other sources, including to supplement the information we have collected about you."
+    },
+    {
+      "type": "body",
+      "text": "We may offer third-party integrations. If you choose to integrate third-party applications with us, we will collect PII as part of that integration. Because each third-party service you may choose to integrate collects different PII, the detail in which information will be collected will be explained during the integration setup process. For more information on integrations, please contact us as described below."
+    },
+    {
+      "type": "heading",
+      "text": "HOW LONG DO WE KEEP YOUR INFORMATION"
+    },
+    {
+      "type": "body",
+      "text": "We retain and use your information in connection with potential legal claims, and for compliance, regulatory, and auditing purposes, and for the ongoing improvement of our Services. We retain your information for as long as your account is active and for as long as reasonably necessary to provide the Services, and thereafter only as needed to comply with our legal obligations, resolve disputes, prevent fraud and abuse, and enforce our agreements. Certain types of data, such as usage logs and analytics data, may be retained for longer periods in de-identified or aggregated form as part of our ongoing analytics and service improvement efforts. This retention is in compliance with applicable laws and regulations."
+    },
+    {
+      "type": "body",
+      "text": "We apply retention periods to specific categories of data, which we enforce through automated deletion processes. As of the date of this Privacy Policy, these periods generally include: Boe chat messages, retained for approximately 90 days; security event records, retained for approximately 90 days; engagement and usage event records, retained for approximately 12 months; notification delivery logs, retained for approximately 12 months; outbound click logs, retained for approximately 24 months; and records of completed deletion requests, retained for approximately 6 months. Account and child records, including profile information, a child’s name, date of birth, and sex, assessment responses and results, and subscription records, are retained for the life of the account and are deleted when the account is deleted, except as described below or as required by law. Boe’s longer-term insights about a child persist for the life of the account, while short-lived contextual details expire from use after a shorter period. These periods may change as our Services evolve, and we may retain information for longer where necessary to comply with legal obligations, resolve disputes, protect the safety, security, or integrity of the Platform, or as otherwise permitted by applicable law."
+    },
+    {
+      "type": "body",
+      "text": "Where you have provided research consent, certain information, such as assessment responses, may be retained for the life of the account to support our research and the development and improvement of our Services. In addition, we may create de-identified or aggregated information from your data, and we may retain and use that de-identified or aggregated information indefinitely. De-identified and aggregated information no longer identifies, and cannot reasonably be used to identify, any individual or child, and is not subject to the category-specific retention periods or to deletion requests."
+    },
+    {
+      "type": "body",
+      "text": "For data types that are not subject to extended retention, such as specific PII no longer required after Service delivery, we will ensure their deletion after the elimination of the purpose and expiration of any applicable retention periods."
+    },
+    {
+      "type": "body",
+      "text": "De-identified or aggregated information that no longer identifies or reasonably can be used to identify any consumer or child may be retained and used as described in Section 10 and is not subject to individual deletion requests. With respect to the personal information of children, we retain such data only as long as reasonably necessary to fulfill the purpose for which it was collected, to allow the child’s continued participation in the applicable activity or feature, to maintain child profiles, assessment results, Boe conversation history, and recommendations, to ensure the security of our users and our Services, or as required by law. When a parent requests deletion of their child’s personal information, we will process such request promptly in accordance with applicable law by deleting or de-identifying the information, subject to legal, security, fraud prevention, and record-keeping obligations."
+    },
+    {
+      "type": "heading",
+      "text": "EXCEPTIONAL CIRCUMSTANCES"
+    },
+    {
+      "type": "body",
+      "text": "In exceptional cases, we may further process your PII to protect your vital interests or as further required for the public good, in accordance with applicable laws."
+    },
+    {
+      "type": "heading",
+      "text": "DE-IDENTIFIED AND AGGREGATED INFORMATION"
+    },
+    {
+      "type": "body",
+      "text": "We use PII to create, in accordance with applicable laws, de-identified, anonymized, and aggregated information such as: information about demographics, de-identified location information, information about devices used to access our Services, and de-identified, anonymized, and aggregated information on usage patterns, child temperament insights, wellness trends, assessment responses, and similar research data that help us understand and improve our Services. Where we maintain or use de-identified information, we will maintain and use it in de-identified form and will not attempt to re-identify it, except as permitted by law to test that the de-identification was effective. We do not include children’s names or chat history in our research datasets, and any data derived from the personal information of children is first de-identified."
+    },
+    {
+      "type": "body",
+      "text": "If you choose to contribute to temperament research or a similar research feature, we use anonymous and aggregated data only and do not include children’s names or chat history in those research datasets. The consent for that feature is limited to research and does not by itself authorize the use of de-identified or aggregated data for advertising. We may share de-identified or aggregated information with research collaborators, including academic institutions, for research purposes, and such information may be used to support academic or scientific publications. Any such information will be shared only in de-identified or aggregated form that does not identify, and cannot reasonably be used to identify, any individual or child."
+    },
+    {
+      "type": "body",
+      "text": "Future Advertising Use. We may seek to use de-identified or aggregated information for advertising purposes in the future. We will not use de-identified or aggregated information for advertising unless and until we (a) update this Privacy Policy to describe that use, (b) obtain any separate, purpose-specific consent that may be required, and (c) provide any opt-out or other choice required by applicable law, including, if applicable, a “Do Not Sell or Share My Personal Information” mechanism. Any such advertising use would rely on de-identified or aggregated information and would not involve the sale or sharing of the personal information of children."
+    },
+    {
+      "type": "heading",
+      "text": "THIRD-PARTY WEBSITES"
+    },
+    {
+      "type": "body",
+      "text": "The Services may contain links to, or connect to or rely on, other websites, platforms, or services that are not operated by us. Please keep in mind that when you provide any information to a third-party website or platform, any information you provide may be separately collected by that third-party website or platform. The information we collect, including PII, is covered by this Privacy Policy, and the information a third-party website or platform collects is subject to that third party’s privacy practices; you should familiarize yourself with any applicable third-party privacy policy as needed. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party website, platform, or service. When you follow a link or use a third-party service or integration in connection with the Platform – including, but not limited to, Anthropic, Google, and Apple, as well as our other service providers – your use of that third party’s services is governed by that third party’s own terms of service and privacy policy, and not by this Privacy Policy. We do not endorse or approve any third-party website, and we do not disclose the personal information of children to third-party retailers or affiliate partners for marketing or advertising purposes."
+    },
+    {
+      "type": "heading",
+      "text": "APIS AND SDKS"
+    },
+    {
+      "type": "body",
+      "text": "We may use third-party application programming interfaces (“API”) and software development kits (“SDKs”), which may allow third parties to collect PII about you for various purposes, such as to conduct analytics, provide authentication, process payments, support account security, support third-party sign-in, provide app store functionality, provide customized content, support product recommendations or affiliate-linked offers, or otherwise streamline the Services. We do not permit third parties to collect or use the personal information of children through APIs and SDKs except as necessary to provide the Services, protect safety or security, or comply with law. For more information about our use of APIs and SDKs, contact us as described below."
+    },
+    {
+      "type": "heading",
+      "text": "CHILDREN’S INFORMATION"
+    },
+    {
+      "type": "body",
+      "text": "Scope; Adult User Responsibility. The Services are intended for Adult Users, and not for children to register for or use independently. A child’s information is provided to us by the parent or guardian, on the child’s behalf. Adult Users are responsible for providing accurate information about Children, for maintaining authority to provide such information, and for supervising any use of the Services that relates to a Child."
+    },
+    {
+      "type": "body",
+      "text": "How We Handle Children’s Personal Information. As described in Sections 3 and 4, Adult Users provide us with certain personal information about their children in order to use the Services, including information used for child profiles, onboarding assessments, temperament and wellness insights, Boe conversations, and recommendations. We only collect personal information about children that is reasonably necessary to provide our Services, and we do not require the disclosure of more information than is reasonably necessary to participate in any activity or feature. We use children’s personal information solely to provide and improve the Services as described in this Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "No Sale or Sharing of Children’s Personal Information. We do not sell or share the personal information of children, and we do not sell or share the personal information of any consumer we know to be under 16 years of age. We do not use children’s personal information for behavioral or targeted advertising."
+    },
+    {
+      "type": "body",
+      "text": "Sensitive Information. A child’s date of birth and sex constitute Sensitive PII. We collect and use this information only to provide the Services (for example, to compute the child’s age and to personalize guidance) and not for the purpose of inferring characteristics about the child for advertising or any purpose unrelated to providing the Services."
+    },
+    {
+      "type": "body",
+      "text": "Parental Choices and Controls. At any time, a parent or legal guardian may: (a) review the personal information we have collected from or about their child; (b) request correction of any inaccurate information; (c) request that we delete the information we have collected from or about their child; (d) manage their marketing and research participation preferences through the privacy settings in the App; and (e) request or download a copy of information associated with the family account, where made available through the Services. A parent may stop further collection and use of their child’s information by deleting the account, which results in deletion of the child’s profile. Deleting your account does not cancel any subscription billed through the Apple App Store or Google Play; to stop further billing, you must cancel the subscription through your device's subscription settings. To exercise any of these rights, a parent may contact us at support@helloboe.com or use the parental control, data download, or account tools made available in the Services. We may require verification of the requesting parent’s identity before processing such requests. We will respond to a request within 45 days of receipt. Where reasonably necessary, we may extend this period by an additional 45 days, and we will notify you of any such extension within the initial 45-day period. If we decline to act on a request, we will inform you of the reason and of your right to appeal. To appeal, you may contact us at support@helloboe.com; we will respond to an appeal within 60 days, and if we deny the appeal, we will provide you with a method to submit a complaint to the applicable state attorney general or regulator. Please note that requesting deletion of a child’s information may result in the deletion of the child’s profile and the inability to use certain features of the Services."
+    },
+    {
+      "type": "body",
+      "text": "Disclosure of Children’s Personal Information. We do not disclose children’s personal information to third parties except: (a) to service providers and contractors who perform business functions on our behalf and who are bound by written agreements to maintain the confidentiality, security, and integrity of such information and to use it only for the purpose of performing services for us; (b) as necessary to protect the safety of a child; (c) to protect the security or integrity of our Platform; or (d) to respond to judicial process, law enforcement requests, or as otherwise required by law. We do not disclose children’s personal information to third parties for marketing or advertising purposes."
+    },
+    {
+      "type": "heading",
+      "text": "NOTICE TO CALIFORNIA RESIDENTS"
+    },
+    {
+      "type": "body",
+      "text": "If you are a California resident, California Civil Code Section 1798.83 permits you to request a notice regarding the disclosure of your personal information by HelloBoe to other parties, including third parties. If you are a California resident and would like a copy of this notice, please contact us at support@helloboe.com."
+    },
+    {
+      "type": "heading",
+      "text": "CALIFORNIA DO NOT TRACK DISCLOSURES"
+    },
+    {
+      "type": "body",
+      "text": "We do not track our users and visitors over time and across third-party platforms to provide targeted advertising. Consequently, we do not respond to Do Not Track (DNT) signals. Other third-party platforms may keep track of your browsing activities when they provide you with content, which enables them to customize what they present to you on their platforms."
+    },
+    {
+      "type": "heading",
+      "text": "UNSUBSCRIBE OR OPT-OUT"
+    },
+    {
+      "type": "body",
+      "text": "All users and/or visitors to our Platform or Services have the option to discontinue receiving communications from us and/or reserve the right to discontinue receiving communications by way of email, newsletters, push notifications, or other channels, subject to the communications and notification settings made available in the Services or on the user’s device. Users may opt out of marketing emails where such settings are made available. Should a user decide to terminate their relationship with our Platform, they can request the deletion of their PII from our database, and we comply with such requests in accordance with applicable data protection and privacy laws. De-identified and aggregated data that no longer identifies or reasonably can be used to identify any consumer or child may be retained for our internal analysis purposes, to improve our Services. With respect to children’s personal information, parents may request deletion, refuse further collection or use, and exercise the other rights described in Section 13 at any time."
+    },
+    {
+      "type": "heading",
+      "text": "SECURITY"
+    },
+    {
+      "type": "body",
+      "text": "We utilize industry-standard safeguarding methods, including implementing prevention software, authentication controls, optional two-factor authentication where made available, and regular monitoring and scanning of systems, to ensure the security of your data. Our hosted data is encrypted at rest and in transit, and access to a child’s name, date of birth, and sex is restricted so that a signed-in parent can access only their own family’s records. We are committed to doing everything reasonably possible to protect your data and privacy, and we take particular care to protect the security and integrity of children’s personal information. These efforts are designed to maintain the integrity and security of your information, providing peace of mind about the safety of your data. We cannot, however, ensure or warrant the security of any information you transmit to us through the use of our Platform or Services; you do so at your own risk. We cannot guarantee that such information may not be accessed, disclosed, altered, or destroyed by breach of any of our physical, technical, or managerial safeguards. In the event of a data breach affecting your personal information, we will notify affected users and any applicable authorities as required by, and within the timeframes set by, applicable law."
+    },
+    {
+      "type": "body",
+      "text": "The Services do not include public profiles, social or community features, or any functionality that makes information you provide visible to other users. Information you enter is associated with your own account and is not shared with or made visible to other users of the Services. While we use reasonable measures to protect your information, no method of transmission or storage is completely secure, and we cannot guarantee the absolute security of your information."
+    },
+    {
+      "type": "heading",
+      "text": "ASSIGNMENT"
+    },
+    {
+      "type": "body",
+      "text": "We reserve the right to transfer or assign the information that we have collected from users, in connection with a corporate transaction, such as a divestiture, merger, consolidation, or asset sale, or in the unlikely event of bankruptcy. Any such transfer of the personal information of children will remain subject to the limitations in this Privacy Policy and applicable law."
+    },
+    {
+      "type": "heading",
+      "text": "CHANGES TO PRIVACY POLICY AGREEMENT"
+    },
+    {
+      "type": "body",
+      "text": "We reserve the right to update and/or change the terms of this Privacy Policy, and as such we will post those changes to our Platform’s homepages, so that the users and/or visitors are always aware of the same. If at any point in time we decide to make use of any PII on file, in a manner significantly different from that which was stated when this information was initially collected, the user or users shall be notified of same. Users at that time shall have the option as to whether or not to permit the use of their information in this separate manner. With respect to children’s personal information, if we make any material changes to how we collect, use, or disclose children’s personal information, we will provide notice to parents (at the email address provided during registration or through in-app notification) before applying the change to information previously collected."
+    },
+    {
+      "type": "heading",
+      "text": "DELETION OR BLOCKING OF PERSONAL DATA"
+    },
+    {
+      "type": "body",
+      "text": "We store your personal data only for the period necessary to fulfill the intended purpose. However, certain types of data, such as usage logs and analytics data, may be retained for an extended period in de-identified or aggregated form as part of our ongoing analysis and service improvement efforts. This retention will be in compliance with applicable laws and regulations. For data types that are not subject to extended retention, such as specific account details no longer required for our service delivery, we will ensure their deletion after the elimination of the purpose and expiration of any existing retention periods. If deletion is not possible, the data will be blocked instead. For children’s personal information, see the retention standards described in Section 8 and Section 13 of this Privacy Policy."
+    },
+    {
+      "type": "heading",
+      "text": "GOVERNING TERMS; LIABILITY, WARRANTIES, AND INDEMNIFICATION"
+    },
+    {
+      "type": "body",
+      "text": "Your access to and use of the Platform and Services is also governed by our Terms of Service. The Terms of Service, and not this Privacy Policy, govern disclaimers and limitations of warranties, limitations and exclusions of liability, indemnification, and related matters, including with respect to your use of the AI-powered features and any reliance on Output. To the extent of any conflict between this Privacy Policy and the Terms of Service regarding those matters, the Terms of Service control. Nothing in this Privacy Policy is intended to expand, limit, or otherwise modify the liability, warranty, or indemnification provisions of the Terms of Service."
+    },
+    {
+      "type": "heading",
+      "text": "HOW TO CONTACT US"
+    },
+    {
+      "type": "body",
+      "text": "If you have any questions or concerns regarding this Privacy Policy or related to our Platform and/or Services, or if you wish to exercise any of your rights regarding your or your child’s personal information, including the rights described in Section 13, please feel free to contact us at the following email: support@helloboe.com."
+    }
+  ]
+}

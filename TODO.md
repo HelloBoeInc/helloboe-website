@@ -5,6 +5,14 @@ in the app repo's `HELLOBOE-BUILD-REMAINING.md`.
 
 ## Backlog
 
+- [ ] **At public launch, make the legal + deletion pages discoverable.** The
+  hosted `/privacy`, `/terms`, `/disclaimer`, `/delete-account` pages ship
+  pre-launch as `noindex` + `robots.txt`-disallowed + unlinked (readable at the
+  direct URL for App Store / Play review, but out of search). At launch: add
+  footer links to Privacy/Terms on the public site, and — required by Google
+  Play — make `/delete-account` **readily discoverable** (link it + drop its
+  `noindex` and its `robots.txt` Disallow). See `legal/README.md`.
+
 - [ ] **Wire in web analytics.** Deferred 2026-06-04 (holding for now, per Andrew).
   Add to the public coming-soon page (`/`) now, and to the launch site when
   `/staging/` is promoted public. Recommended: a privacy-first, cookieless tool
@@ -27,6 +35,12 @@ in the app repo's `HELLOBOE-BUILD-REMAINING.md`.
 
 ## Done
 
+- [x] 2026-07-09 — Hosted legal + deletion pages added: `/privacy`, `/terms`,
+  `/disclaimer` (verbatim from counsel's 06-30 finals, generated from the app
+  repo's `src/content/legal/*` via `scripts/build-legal-pages.mjs`) + a
+  purpose-built `/delete-account` (Google Play deletion route). All `noindex`,
+  `robots.txt`-disallowed, and unlinked pre-launch. Closes LB2's hosted-URL
+  half + the Play deletion-URL requirement.
 - [x] 2026-06-04 — Premium marketing site built behind an invite-only gate at
   `/staging/` (AES-256-GCM, PBKDF2 600k, SHA-256-hashed email allowlist). Live
   coming-soon page at `/` preserved untouched.
