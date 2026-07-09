@@ -1,0 +1,16 @@
+# helloboe.com — robots
+#
+# Pre-launch: the legal + account-deletion pages are intentionally readable at
+# their direct URLs (App Store review + Google Play's data-safety crawler fetch
+# them directly) but kept OUT of search and off the site's navigation until
+# launch. Nothing links to them; these Disallow lines are defense-in-depth
+# alongside the per-page <meta name="robots" content="noindex, nofollow">.
+#
+# NOTE: at public launch, /delete-account should be made discoverable (Google
+# Play wants the deletion route "readily discoverable") — remove its Disallow +
+# noindex and link it then.
+User-agent: *
+Disallow: /privacy
+Disallow: /terms
+Disallow: /disclaimer
+Disallow: /delete-account
