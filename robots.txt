@@ -6,11 +6,11 @@
 # launch. Nothing links to them; these Disallow lines are defense-in-depth
 # alongside the per-page <meta name="robots" content="noindex, nofollow">.
 #
-# NOTE: at public launch, /delete-account should be made discoverable (Google
-# Play wants the deletion route "readily discoverable") — remove its Disallow +
-# noindex and link it then.
+# NOTE: /delete-account was made discoverable ahead of general launch (Google
+# Play requires the deletion route "readily discoverable" for submission) —
+# its Disallow + noindex have been removed. /privacy, /terms, /disclaimer
+# remain intentionally undiscoverable until public launch.
 User-agent: *
 Disallow: /privacy
 Disallow: /terms
 Disallow: /disclaimer
-Disallow: /delete-account
