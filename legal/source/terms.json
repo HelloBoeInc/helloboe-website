@@ -1,9 +1,9 @@
 {
   "key": "terms",
   "title": "Terms of Service",
-  "lastRevised": "June 30, 2026",
-  "consentVersion": "2.0",
-  "source": "HelloBoe - Terms of Service (06-30-2026).docx",
+  "lastRevised": "July 16, 2026",
+  "consentVersion": "2.1",
+  "source": "HelloBoe - Terms of Service (07-16-2026).docx",
   "blocks": [
     {
       "type": "body",
@@ -576,6 +576,10 @@
     {
       "type": "body",
       "text": "AI-Powered Services. The Company utilizes artificial intelligence, large language models, machine learning, and related technologies as a core feature of the Services. These AI Systems are integral to the functionality of the Platform and Services, including but not limited to the Boe conversational feature, child development tracking and insights, content personalization, analytics and other AI-driven features. Boe is an artificial intelligence assistant; its outputs are machine-generated and may be inaccurate, incomplete, or inappropriate, and are subject to Section 28 in full. Boe is designed to provide general informational parenting guidance only, and is not a substitute for professional medical, psychological, or legal advice. AI-generated Output is probabilistic in nature and may not always be accurate, complete, or appropriate for your circumstances. You should not rely on Output from Boe as a sole source of truth. By accessing or using the Platform or Services, you acknowledge and agree that AI Systems are used extensively throughout the Services and that your User Data will be used in connection with such AI Systems as described in these Terms and in our Privacy Policy."
+    },
+    {
+      "type": "body",
+      "text": "Reporting Objectionable Output. You may report any Output you believe is objectionable, harmful, or inappropriate using the in-app \"Report this response\" control or by contacting support@helloboe.com. We review reports of objectionable Output and may take appropriate action, including removing or adjusting content, refining our filters, and suspending or terminating accounts."
     },
     {
       "type": "body",
