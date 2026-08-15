@@ -1,0 +1,12 @@
+{
+  "name": "helloboe-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "helloboe.com — marketing site, hosted legal pages, and the gated /staging preview.",
+  "scripts": {
+    "build:staging": "node scripts/build-staging.mjs",
+    "build:legal": "node scripts/build-legal-pages.mjs",
+    "check:legal": "node scripts/build-legal-pages.mjs --check"
+  }
+}

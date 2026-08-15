@@ -1,0 +1,78 @@
+name: Build and publish the staging site
+
+# Rebuilds /staging/index.html whenever the site source or its content changes,
+# and commits the result back to main so GitHub Pages serves it.
+#
+# WHY THIS EXISTS
+#   The staging page is encrypted at build time. That means "edit the copy" is
+#   not a file edit, it is a build. Without this workflow, changing one word
+#   would require a laptop with the repo cloned, Node installed, and the gate
+#   password to hand. With it, editing content.json in a CMS or in the GitHub
+#   web editor is enough: this runs, re-encrypts, and the live page updates.
+#
+# SETUP (once)
+#   Settings > Secrets and variables > Actions > New repository secret
+#     Name:  HELLOBOE_STAGING_PASSWORD
+#     Value: the /staging password
+#   Nothing else. The password is never in the repo.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      # Deliberately NOT staging/** — this workflow writes there, and listing
+      # it would make every run trigger another run.
+      - 'staging-src/**'
+      - 'scripts/build-staging.mjs'
+      - '.github/workflows/build-staging.yml'
+  workflow_dispatch:
+
+concurrency:
+  # A second push while one build is running should supersede it, not race it
+  # to commit the same file.
+  group: build-staging
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: staging-src/package-lock.json
+
+      - name: Fail early if the password secret is missing
+        env:
+          HELLOBOE_STAGING_PASSWORD: ${{ secrets.HELLOBOE_STAGING_PASSWORD }}
+        run: |
+          if [ -z "$HELLOBOE_STAGING_PASSWORD" ]; then
+            echo "::error::HELLOBOE_STAGING_PASSWORD is not set. Add it under Settings > Secrets and variables > Actions."
+            echo "::error::Without it the build would silently produce a page nobody can open."
+            exit 1
+          fi
+
+      - name: Build and encrypt
+        env:
+          HELLOBOE_STAGING_PASSWORD: ${{ secrets.HELLOBOE_STAGING_PASSWORD }}
+        run: node scripts/build-staging.mjs
+
+      - name: Commit the rebuilt page
+        run: |
+          git config user.name  "helloboe-bot"
+          git config user.email "actions@github.com"
+          git add staging/index.html staging/site-assets
+          if git diff --staged --quiet; then
+            echo "No change to publish."
+            exit 0
+          fi
+          git commit -m "build(staging): rebuild encrypted site from content.json
+
+          Automated. Source of truth is staging-src/content.json."
+          git push

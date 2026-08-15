@@ -1,0 +1,71 @@
+{
+  "_readme": [
+    "Metadata and analytics configuration for the HelloBoe marketing site.",
+    "Edit this file, then run `npm run build:staging` from the repo root.",
+    "Nothing here is secret. The gate password is passed separately via the",
+    "HELLOBOE_STAGING_PASSWORD environment variable and is never committed."
+  ],
+
+  "launched": false,
+  "_launched": [
+    "false  = the site is the invite-only preview at /staging.",
+    "         The gate page is noindex/nofollow and carries a deliberately",
+    "         uninformative title, so a stray link leaks nothing.",
+    "true   = the site is public. Full SEO metadata, indexable, canonical at",
+    "         the site root. Flip this in the same change that removes the gate."
+  ],
+
+  "url": "https://www.helloboe.com/",
+  "title": "HelloBoe | Your child, decoded.",
+  "shortTitle": "HelloBoe",
+  "description": "Temperament science meets real parenting. The first parenting app built to understand the child you actually have, for ages 4 to 36 months.",
+  "gatedTitle": "HelloBoe",
+  "themeColor": "#fdf4e9",
+  "locale": "en_US",
+  "twitterSite": "",
+
+  "ogImage": "site-assets/og-image.png",
+  "ogImageWidth": 1200,
+  "ogImageHeight": 630,
+  "favicon": "site-assets/app-icon.png",
+
+  "analytics": {
+    "provider": "plausible",
+    "_provider": [
+      "plausible | fathom | none",
+      "",
+      "Chosen because legal/source/privacy.json (counsel text, revised",
+      "2026-06-30, consent version 2.0) states in the Automatically Collected",
+      "Information section: 'Our marketing and policy website does not",
+      "currently set advertising or analytics cookies.'",
+      "",
+      "Plausible and Fathom are cookieless and store nothing in the browser,",
+      "so that published statement stays true and no consent banner is",
+      "required. Google Analytics would contradict it outright. Mixpanel's",
+      "web SDK sets a cookie by default and would need both a config override",
+      "and a policy revision.",
+      "",
+      "OPEN ITEM: the policy names Mixpanel, RevenueCat and Sentry",
+      "individually in its Who We Share Your Information With section. Add",
+      "the analytics vendor named here to that list at the next policy",
+      "revision. Not a re-consent event, but it should not be skipped."
+    ],
+    "domain": "helloboe.com",
+    "scriptSrc": "https://plausible.io/js/script.js",
+    "enabled": true,
+    "_enabled": [
+      "The tag is emitted now and points at helloboe.com. Until the Plausible",
+      "account exists the script simply fails to load and nothing is",
+      "collected anywhere, so this is safe to leave on. Creating the account",
+      "activates it with no code change and no redeploy.",
+      "",
+      "Set false to remove the tag entirely."
+    ],
+    "trackWhileGated": true,
+    "_trackWhileGated": [
+      "The tag lives inside the encrypted payload, so it only ever runs after",
+      "someone has entered the password. Gate visits are never counted.",
+      "Set false to strip analytics entirely until `launched` is true."
+    ]
+  }
+}
