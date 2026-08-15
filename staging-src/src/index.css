@@ -146,9 +146,18 @@ html[data-js] [data-float] { animation: hb-float 7s ease-in-out infinite; }
    Real URLs go in the LINKS block at the top of HelloBoePage.tsx. */
 .hb-inactive { opacity: 0.4; cursor: default; pointer-events: none; }
 
-/* Store badges are inert until the listings are live. */
-.hb-badge { transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.3s ease; }
-.hb-badge[data-live='false'] { opacity: 0.55; cursor: default; }
+/* Store badges are inert until the listings are live, but they render at FULL
+   opacity regardless.
+
+   Two reasons they are not dimmed. Apple's and Google's badge guidelines both
+   prohibit altering the artwork, and reducing opacity is an alteration. And
+   visually, a faded badge reads as a rendering fault rather than a deliberate
+   state. The "Launching soon" line under them already says they are not live,
+   so the dimming was carrying a message that was already being carried.
+
+   Only the cursor and the missing hover lift signal that they are not links. */
+.hb-badge { transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
+.hb-badge[data-live='false'] { cursor: default; }
 @media (hover: hover) {
   .hb-badge[data-live='true']:hover { transform: translateY(-2px) scale(1.02); }
 }
