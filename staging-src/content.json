@@ -1,0 +1,221 @@
+{
+  "_readme": [
+    "EVERY word and every link on helloboe.com lives in this file.",
+    "",
+    "Edit it in Pages CMS (see EDITING.md) or directly on GitHub. Saving it",
+    "triggers a rebuild and the live /staging page updates in a few minutes.",
+    "You never need to touch code to change copy or a URL.",
+    "",
+    "Headings that have a coloured italic word are split into three parts:",
+    "  before     text before the coloured word",
+    "  highlight  the coloured italic word itself",
+    "  after      text after it",
+    "Leave a part as \"\" if you do not need it. The colours are set in the",
+    "design and are deliberately not editable here.",
+    "",
+    "HOUSE RULES (these are checked automatically on every build):",
+    "  - No em-dashes. Use a comma, a colon, or a full stop. En-dashes in",
+    "    number ranges like 4-36 are fine.",
+    "  - Never use: difficult child, easy child, fix, correct, train, hack,",
+    "    optimize, maximize, mama, mommy, supermom, journey.",
+    "  - US English."
+  ],
+
+  "links": {
+    "appStore": "",
+    "googlePlay": "",
+    "preLaunchNote": "Launching soon on iOS and Android.",
+    "press": "",
+    "about": "",
+    "primaryCta": "#download",
+    "privacy": "https://www.helloboe.com/privacy",
+    "terms": "https://www.helloboe.com/terms",
+    "disclaimer": "https://www.helloboe.com/disclaimer",
+    "deleteAccount": "https://www.helloboe.com/delete-account",
+    "support": "mailto:support@helloboe.com"
+  },
+
+  "nav": {
+    "items": [
+      { "label": "The 6 Profiles", "href": "#six-profiles" },
+      { "label": "The App", "href": "#the-app" },
+      { "label": "The Science", "href": "#the-science" },
+      { "label": "Press", "href": "@links.press" }
+    ],
+    "cta": "Download"
+  },
+
+  "hero": {
+    "heading": { "before": "Your child\n", "highlight": "decoded.", "after": "" },
+    "subhead": "The first parenting app built on temperament science, so the advice finally fits the child you actually have.",
+    "ageNote": "Built for parents of babies and toddlers ages 4 to 36 months"
+  },
+
+  "problem": {
+    "eyebrow": "THE PROBLEM",
+    "heading": { "before": "You're doing everything right. So why doesn't the advice ", "highlight": "work?", "after": "" },
+    "body": [
+      "You've read the books. Tried the tips. Asked the internet at 2am. But the advice was written for a generic child. And yours isn't generic.",
+      "Every child is born with a unique temperament: their built in wiring that shapes how they react to change, why certain things overwhelm them, what calms them, and what sets them off."
+    ],
+    "closer": "When you understand their temperament, everything shifts. The meltdowns make sense. The strategies work."
+  },
+
+  "profiles": {
+    "eyebrow": "THE SIX TEMPERAMENT PROFILES",
+    "heading": { "before": "Which ", "highlight": "one", "after": " is your child?" },
+    "intro": "Every child maps to one of six temperament archetypes, each with its own superpower, its own challenges and its own way of meeting the world.",
+    "cta": "Discover your child's profile →",
+    "cards": [
+      { "key": "maverick",    "name": "THE MAVERICK",    "desc": "Bold Spirit. Limitless Energy. Leads with intensity" },
+      { "key": "inventor",    "name": "THE INVENTOR",    "desc": "Boundless Drive. Laser Focus. Concentrates energy." },
+      { "key": "empath",      "name": "THE EMPATH",      "desc": "Deep Connection. Big Heart. Feels the world." },
+      { "key": "detective",   "name": "THE DETECTIVE",   "desc": "Watchful Eye. Sharp Mind. Studies the room." },
+      { "key": "philosopher", "name": "THE PHILOSOPHER", "desc": "Calm. Unhurried. Content. A calm, steady presence." },
+      { "key": "navigator",   "name": "THE NAVIGATOR",   "desc": "Quiet Balance. Real Range. Navigates new situations." }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "HOW IT WORKS",
+    "heading": { "before": "Four minutes to ", "highlight": "clarity", "after": "" },
+    "steps": [
+      {
+        "n": "01",
+        "title": "Take the assessment",
+        "body": "Answer 24 research-backed questions about your child's behavior patterns. It takes about four minutes. No account. No fuss."
+      },
+      {
+        "n": "02",
+        "title": "Discover their profile",
+        "body": "Get your child's temperament archetype, their superpower, a personal letter to you and a deep dive into how they experience the world."
+      },
+      {
+        "n": "03",
+        "title": "Parent with precision",
+        "body": "Receive daily insights, strategies and toy recommendations matched to your child's wiring. The more you use HelloBoe, the smarter it gets."
+      }
+    ]
+  },
+
+  "reveal": {
+    "eyebrow": "THE REVEAL",
+    "heading": { "before": "The moment your child comes into ", "highlight": "focus.", "after": "" },
+    "body": "At the end of the assessment, the picture clicks in to place: their archetype, a plain-language read on energy, sensitivity, regulation and a personal playbook for the wiring that's uniquely theirs."
+  },
+
+  "app": {
+    "eyebrow": "INSIDE THE APP",
+    "heading": { "before": "Not just a profile.\nA companion that ", "highlight": "learns", "after": " your child." },
+    "intro": "HelloBoe gets sharper with every interaction so the advice you get next month is more precise than the advice you get today.",
+    "features": [
+      {
+        "key": "navigate",
+        "eyebrow": "NAVIGATE A SITUATION",
+        "heading": { "before": "Always know ", "highlight": "what to do", "after": "" },
+        "body": "Strategies matched to their wiring. Travel tips for a Maverick. Social strategies for a Detective. Food approaches for an Empath. It's not one-size-fits-all. It's one-size-fits-them."
+      },
+      {
+        "key": "playshelf",
+        "eyebrow": "PLAYSHELF",
+        "heading": { "before": "Toys they'll actually ", "highlight": "love.", "after": "" },
+        "body": "No more buying toys your child quietly ignores. The Playshelf recommends toys based on your child's temperament and age; leaning into their natural strengths and gently stretching their challenges. It refreshes as they grow."
+      },
+      {
+        "key": "checkins",
+        "eyebrow": "CHECK-INS",
+        "heading": { "before": "Continuous ", "highlight": "check-ins.", "after": "" },
+        "body": "They'll change. We'll notice. Every insight updates to match it. Temperament reveals itself over time, so HelloBoe keeps measuring and the guidance moves with your child instead of freezing on the day you started."
+      }
+    ]
+  },
+
+  "difference": {
+    "eyebrow": "THE HELLOBOE DIFFERENCE",
+    "heading": { "before": "See behavior ", "highlight": "differently", "after": "." },
+    "body": "The same moment read through temperament. Suddenly it isn't a problem to fix. It's a signal you can answer.",
+    "chat": {
+      "question": "Why is every afternoon a meltdown?",
+      "ageLabel": "6 MONTHS",
+      "replies": [
+        {
+          "profile": "maverick",
+          "archetype": "THE MAVERICK",
+          "msg": "He's been at full throttle since 6am and his breaks are still being built. By five he can't come down without borrowing your calm."
+        },
+        {
+          "profile": "empath",
+          "archetype": "THE EMPATH",
+          "msg": "She's absorbed every mood and sound in this house since morning - by five it isn't new upset, its the whole day landing at once."
+        },
+        {
+          "profile": "detective",
+          "archetype": "THE DETECTIVE",
+          "msg": "All day she's been studying - every new face and sound got logged, and the afternoon is the bill coming due for that much watching."
+        },
+        {
+          "profile": "philosopher",
+          "archetype": "THE PHILOSOPHER",
+          "msg": "He never escalates to get noticed, so his signals stay small all day - the afternoon is those small signals finally stacking into one big one."
+        }
+      ]
+    }
+  },
+
+  "science": {
+    "eyebrow": "THE SCIENCE",
+    "heading": { "before": "Built on decades of ", "highlight": "research.", "after": "\nNot pop psychology." },
+    "body": "HelloBoe is grounded in years of child temperament research, including the most widely validated framework in developmental psychology. We've translated this into something you can actually use during a meltdown at the grocery store.",
+    "stats": [
+      { "stat": "24", "label": "Questions.\nFour minutes." },
+      { "stat": "06", "label": "Temperament\nProfiles" },
+      { "stat": "1000s", "label": "Published studies" }
+    ],
+    "advisor": {
+      "eyebrow": "OUR SCIENTIFIC ADVISOR",
+      "name": "Dr. Rebecca Shiner,",
+      "body": "Professor of Psychology and Brain sciences at Colgate University is HelloBoe's Scientific Advisor and has reviewed & advised on our temperament methodology."
+    }
+  },
+
+  "download": {
+    "heading": { "before": "One size\nfits ", "highlight": "none.", "after": "" },
+    "sub": "Temperament science meets real parenting.",
+    "subBold": "The only app built to truly understand your child."
+  },
+
+  "footer": {
+    "columns": [
+      {
+        "title": "PRODUCT",
+        "items": [
+          { "label": "The 6 Profiles", "href": "#six-profiles" },
+          { "label": "The App", "href": "#the-app" },
+          { "label": "The Science", "href": "#the-science" },
+          { "label": "Download", "href": "#download" }
+        ]
+      },
+      {
+        "title": "RESOURCES",
+        "items": [
+          { "label": "Press", "href": "@links.press" },
+          { "label": "Support", "href": "@links.support" }
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "items": [{ "label": "About", "href": "@links.about" }]
+      },
+      {
+        "title": "LEGAL",
+        "items": [
+          { "label": "Privacy Policy", "href": "@links.privacy" },
+          { "label": "Terms of Use", "href": "@links.terms" },
+          { "label": "Disclaimer", "href": "@links.disclaimer" },
+          { "label": "Delete your account", "href": "@links.deleteAccount" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 HelloBoe, Inc. All rights reserved. HelloBoe™ and the HelloBoe™ app icon are trademarks of HelloBoe, Inc."
+  }
+}

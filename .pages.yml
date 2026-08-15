@@ -1,0 +1,290 @@
+# Pages CMS configuration — https://pagescms.org
+#
+# This turns staging-src/content.json into a visual editor at app.pagescms.org:
+# labelled fields, grouped by section, with help text. Kim and Andrew edit
+# there, hit save, and the GitHub Action rebuilds and publishes the site.
+#
+# Nothing here changes the site. It only describes how the content file should
+# be presented for editing. If a field is missing from this config, it is still
+# in content.json and still live — it just will not appear in the CMS.
+
+media:
+  input: staging/site-assets
+  output: site-assets
+
+content:
+  - name: site_content
+    label: Website content
+    path: staging-src/content.json
+    type: file
+    format: json
+    fields:
+      - name: links
+        label: Links and URLs
+        type: object
+        description: >-
+          Every URL on the site. Leave a field empty and that link shows on the
+          page greyed out and unclickable, so nothing ever leads nowhere.
+        fields:
+          - { name: appStore, label: App Store URL, type: string, description: "Paste the real App Store listing URL here when the app is public. Empty = badge shown but not clickable." }
+          - { name: googlePlay, label: Google Play URL, type: string, description: "Paste the real Google Play listing URL here when the app is public." }
+          - { name: preLaunchNote, label: Pre-launch note under the badges, type: string, description: "Only shown while BOTH store links above are empty." }
+          - { name: press, label: Press page URL, type: string }
+          - { name: about, label: About page URL, type: string }
+          - { name: primaryCta, label: Main blue button destination, type: string, description: "Currently #download, which scrolls to the bottom. Change to a real URL when there is one." }
+          - { name: privacy, label: Privacy Policy URL, type: string }
+          - { name: terms, label: Terms of Use URL, type: string }
+          - { name: disclaimer, label: Disclaimer URL, type: string }
+          - { name: deleteAccount, label: Delete account URL, type: string, description: "Google Play requires this to be easy to find. Do not remove it from the footer without checking that requirement." }
+          - { name: support, label: Support email link, type: string }
+
+      - name: nav
+        label: Top navigation
+        type: object
+        fields:
+          - name: items
+            label: Menu items
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Label, type: string }
+              - { name: href, label: Link, type: string, description: "Use #six-profiles to jump to a section, or @links.press to reuse a URL from the Links block." }
+          - { name: cta, label: Button text, type: string }
+
+      - name: hero
+        label: "Hero (the very top)"
+        type: object
+        fields:
+          - name: heading
+            label: Headline
+            type: object
+            description: "Split in three so the coloured italic word stays editable. Press Enter inside a field for a line break."
+            fields:
+              - { name: before, label: Text before the coloured word, type: text }
+              - { name: highlight, label: The coloured italic word, type: string }
+              - { name: after, label: Text after it, type: text }
+          - { name: subhead, label: Sub-headline, type: text }
+          - { name: ageNote, label: Age note, type: string }
+
+      - name: problem
+        label: "Section: The problem"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label above the headline, type: string }
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - { name: body, label: Paragraphs, type: text, list: true }
+          - { name: closer, label: Bold closing line, type: text }
+
+      - name: profiles
+        label: "Section: The six profiles"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - { name: intro, label: Intro paragraph, type: text }
+          - { name: cta, label: Blue button text, type: string }
+          - name: cards
+            label: The six cards
+            type: object
+            list: true
+            description: >-
+              Do not change "key" — it is what picks the icon and the brand
+              colour for each profile.
+            fields:
+              - { name: key, label: Profile key (do not change), type: string }
+              - { name: name, label: Name, type: string }
+              - { name: desc, label: Description, type: text }
+
+      - name: howItWorks
+        label: "Section: How it works"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - name: steps
+            label: Steps
+            type: object
+            list: true
+            fields:
+              - { name: n, label: Number, type: string }
+              - { name: title, label: Title, type: string }
+              - { name: body, label: Body, type: text }
+
+      - name: reveal
+        label: "Section: The reveal"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - { name: body, label: Body, type: text }
+
+      - name: app
+        label: "Section: Inside the app"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - { name: intro, label: Intro paragraph, type: text }
+          - name: features
+            label: Features
+            type: object
+            list: true
+            description: 'Do not change "key" — it selects which app screenshot is shown.'
+            fields:
+              - { name: key, label: Feature key (do not change), type: string }
+              - { name: eyebrow, label: Small label, type: string }
+              - name: heading
+                label: Headline
+                type: object
+                fields:
+                  - { name: before, label: Before, type: text }
+                  - { name: highlight, label: Coloured word, type: string }
+                  - { name: after, label: After, type: text }
+              - { name: body, label: Body, type: text }
+
+      - name: difference
+        label: "Section: The HelloBoe difference"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - { name: body, label: Body, type: text }
+          - name: chat
+            label: Chat example
+            type: object
+            fields:
+              - { name: question, label: The parent's question, type: text }
+              - { name: ageLabel, label: Age label on each reply, type: string }
+              - name: replies
+                label: Replies
+                type: object
+                list: true
+                fields:
+                  - { name: profile, label: Profile key (sets the colour), type: string }
+                  - { name: archetype, label: Archetype name, type: string }
+                  - { name: msg, label: Message, type: text }
+
+      - name: science
+        label: "Section: The science"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - { name: body, label: Body, type: text }
+          - name: stats
+            label: Statistics
+            type: object
+            list: true
+            fields:
+              - { name: stat, label: Big number, type: string }
+              - { name: label, label: Caption, type: text }
+          - name: advisor
+            label: Scientific advisor card
+            type: object
+            description: >-
+              Dr Shiner's name and title are covered by a name-use agreement.
+              Check with Andrew before changing anything in this block.
+            fields:
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: name, label: Name, type: string }
+              - { name: body, label: Description, type: text }
+
+      - name: download
+        label: "Section: Download (bottom)"
+        type: object
+        fields:
+          - name: heading
+            label: Headline
+            type: object
+            fields:
+              - { name: before, label: Before, type: text }
+              - { name: highlight, label: Coloured word, type: string }
+              - { name: after, label: After, type: text }
+          - { name: sub, label: Sub-line, type: text }
+          - { name: subBold, label: Bold sub-line, type: text }
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: columns
+            label: Columns
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Column heading, type: string }
+              - name: items
+                label: Links
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: Label, type: string }
+                  - { name: href, label: Link, type: string }
+          - { name: copyright, label: Copyright line, type: text }
+
+  - name: site_settings
+    label: Metadata and analytics
+    path: staging-src/site.config.json
+    type: file
+    format: json
+    fields:
+      - { name: launched, label: Site is public, type: boolean, description: "Leave OFF while the site is behind the password. Turning it ON makes the site indexable by Google and adds structured data. It does NOT remove the password gate on its own." }
+      - { name: title, label: Browser tab title and share title, type: string }
+      - { name: description, label: Search and share description, type: text, description: "Aim for roughly 150 to 160 characters." }
+      - { name: shortTitle, label: Short site name, type: string }
+      - { name: gatedTitle, label: "Tab title while behind the password", type: string, description: "Kept vague on purpose so a stray link gives nothing away." }
+      - { name: url, label: Site URL, type: string }
+      - { name: themeColor, label: Browser theme color, type: string }
+      - { name: ogImage, label: Share image, type: image }
+      - { name: favicon, label: Favicon, type: image }
+      - name: analytics
+        label: Analytics
+        type: object
+        fields:
+          - { name: provider, label: Provider, type: select, options: { values: [plausible, fathom, none] }, description: "Cookieless providers only. The published privacy policy states the website sets no analytics cookies, so Google Analytics would contradict it." }
+          - { name: domain, label: Domain registered with the provider, type: string }
+          - { name: scriptSrc, label: Script URL, type: string }
+          - { name: enabled, label: Enabled, type: boolean }
+          - { name: trackWhileGated, label: Also count visits behind the password, type: boolean, description: "Only counts people who entered the password, never visits to the login card itself." }
