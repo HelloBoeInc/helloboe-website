@@ -4,27 +4,34 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
 /**
- * Build config for the HelloBoe marketing site.
+ * Build config for the HelloBoe marketing site. Two modes:
  *
- * The output has to be a SINGLE self-contained HTML file, because it gets
- * AES-GCM encrypted and rendered from memory behind the /staging password
- * gate. A page that fetched separate .js / .css / .png files would be
- * publishing its own content unencrypted next to the gate that hides it.
+ * GATED (default) — the output has to be a SINGLE self-contained HTML file,
+ * because it gets AES-GCM encrypted and rendered from memory behind the
+ * /staging password gate. A page that fetched separate .js / .css / .png
+ * files would be publishing its own content unencrypted next to the gate
+ * that hides it. assetsInlineLimit is therefore set absurdly high so Vite
+ * inlines every image and font as a data: URI, and build-staging.mjs folds
+ * the emitted JS and CSS into the HTML itself.
  *
- * assetsInlineLimit is therefore set absurdly high so Vite inlines every
- * image and font as a data: URI. scripts/build-staging.mjs then folds the
- * emitted JS and CSS into the HTML itself.
- *
- * Cost of this: no per-asset browser caching. That is the right trade for a
- * one-page site whose assets total well under a megabyte, and it means the
- * page also works identically at /staging today and at the site root after
- * launch, with no path rewriting.
+ * PUBLIC (HB_PUBLIC=1, set by build-staging.mjs --public) — the launched
+ * site at the root has no gate, so the single-file trade-off inverts: a
+ * ~1 MB monolithic document meant nothing painted until ALL of it had
+ * downloaded and executed, which is a very slow first load on a phone.
+ * Public builds are a normal multi-file build: hashed, cacheable assets
+ * under site-assets/bundle/, images fetched in parallel (many are
+ * loading="lazy"), and a small initial document.
  */
+const PUBLIC = process.env.HB_PUBLIC === '1'
+
 export default defineConfig({
   base: './',
   plugins: [react(), tailwindcss()],
   build: {
-    assetsInlineLimit: 100_000_000,
+    assetsInlineLimit: PUBLIC ? 4096 : 100_000_000,
+    // The public bundle dir is wholly owned by the build script: it wipes and
+    // repopulates REPO/site-assets/bundle on every --public run.
+    assetsDir: PUBLIC ? 'site-assets/bundle' : 'assets',
     cssCodeSplit: false,
     sourcemap: false,
     // Terser squeezes noticeably more out of a bundle that is mostly one

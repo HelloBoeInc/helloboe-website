@@ -36,7 +36,7 @@
  *   rather than silently shipping an unopenable page.
  */
 import { execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync, cpSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { webcrypto as crypto } from 'node:crypto';
@@ -161,7 +161,15 @@ lintCopy();
 // ---------------------------------------------------------------------------
 
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-const run = (args) => execFileSync(npm, args, { cwd: SRC, stdio: 'inherit' });
+// HB_PUBLIC switches vite.config.ts to the multi-file public build (separate
+// cacheable assets under site-assets/bundle/) instead of the single
+// inline-everything file the encrypted gate needs.
+const run = (args) =>
+  execFileSync(npm, args, {
+    cwd: SRC,
+    stdio: 'inherit',
+    env: { ...process.env, HB_PUBLIC: PUBLIC_MODE ? '1' : '' },
+  });
 
 if (!SKIP_INSTALL || !existsSync(resolve(SRC, 'node_modules'))) {
   log('installing dependencies…');
@@ -183,33 +191,39 @@ run(['run', 'build']);
 // ---------------------------------------------------------------------------
 
 let html = readFileSync(resolve(DIST, 'index.html'), 'utf8');
-const assetDir = resolve(DIST, 'assets');
-const assets = existsSync(assetDir) ? readdirSync(assetDir) : [];
 
-const jsFiles = assets.filter((f) => f.endsWith('.js'));
-const cssFiles = assets.filter((f) => f.endsWith('.css'));
-if (jsFiles.length !== 1) fail(`expected exactly 1 JS bundle, found ${jsFiles.length}: ${jsFiles}`);
-if (cssFiles.length > 1) fail(`expected at most 1 CSS bundle, found ${cssFiles.length}`);
+if (!PUBLIC_MODE) {
+  const assetDir = resolve(DIST, 'assets');
+  const assets = existsSync(assetDir) ? readdirSync(assetDir) : [];
 
-const jsCode = readFileSync(join(assetDir, jsFiles[0]), 'utf8');
-const cssCode = cssFiles.length ? readFileSync(join(assetDir, cssFiles[0]), 'utf8') : '';
+  const jsFiles = assets.filter((f) => f.endsWith('.js'));
+  const cssFiles = assets.filter((f) => f.endsWith('.css'));
+  if (jsFiles.length !== 1) fail(`expected exactly 1 JS bundle, found ${jsFiles.length}: ${jsFiles}`);
+  if (cssFiles.length > 1) fail(`expected at most 1 CSS bundle, found ${cssFiles.length}`);
 
-// Closing tags inside inlined content would terminate the host tag early.
-const guardScript = (s) => s.replace(/<\/script/gi, '<\\/script');
-const guardStyle = (s) => s.replace(/<\/style/gi, '<\\/style');
+  const jsCode = readFileSync(join(assetDir, jsFiles[0]), 'utf8');
+  const cssCode = cssFiles.length ? readFileSync(join(assetDir, cssFiles[0]), 'utf8') : '';
 
-// Drop Vite's own tags and re-add the same content inline.
-html = html
-  .replace(/<script[^>]*src="[^"]*"[^>]*><\/script>\s*/gi, '')
-  .replace(/<link[^>]*rel="stylesheet"[^>]*>\s*/gi, '')
-  .replace(/<link[^>]*rel="modulepreload"[^>]*>\s*/gi, '');
+  // Closing tags inside inlined content would terminate the host tag early.
+  const guardScript = (s) => s.replace(/<\/script/gi, '<\\/script');
+  const guardStyle = (s) => s.replace(/<\/style/gi, '<\\/style');
 
-if (cssCode) {
-  html = html.replace('</head>', `<style>${guardStyle(cssCode)}</style>\n</head>`);
+  // Drop Vite's own tags and re-add the same content inline.
+  html = html
+    .replace(/<script[^>]*src="[^"]*"[^>]*><\/script>\s*/gi, '')
+    .replace(/<link[^>]*rel="stylesheet"[^>]*>\s*/gi, '')
+    .replace(/<link[^>]*rel="modulepreload"[^>]*>\s*/gi, '');
+
+  if (cssCode) {
+    html = html.replace('</head>', `<style>${guardStyle(cssCode)}</style>\n</head>`);
+  }
+  // No type="module": the bundle is IIFE so it runs correctly after
+  // document.write(). See the format:'iife' note in vite.config.ts.
+  html = html.replace('</body>', `<script>${guardScript(jsCode)}</script>\n</body>`);
 }
-// No type="module": the bundle is IIFE so it runs correctly after
-// document.write(). See the format:'iife' note in vite.config.ts.
-html = html.replace('</body>', `<script>${guardScript(jsCode)}</script>\n</body>`);
+// PUBLIC_MODE keeps Vite's own script/link tags: the launched site serves
+// hashed, cacheable files from site-assets/bundle/ so the first paint does
+// not wait for a megabyte-sized monolithic document (see vite.config.ts).
 
 // ---------------------------------------------------------------------------
 // 4. Metadata and analytics
@@ -339,11 +353,19 @@ log(`payload: ${(Buffer.byteLength(payload) / 1024).toFixed(0)} KB of self-conta
 
 if (PUBLIC_MODE) {
   const target = resolve(REPO, 'index.html');
+  const bundleSrc = resolve(DIST, 'site-assets/bundle');
+  const bundleDst = resolve(REPO, 'site-assets/bundle');
+  if (!existsSync(bundleSrc)) fail(`public build produced no ${bundleSrc}`);
   if (DRY_RUN) {
-    log(`dry run: would write ${target}`);
+    log(`dry run: would write ${target} and refresh ${bundleDst}`);
   } else {
+    // The bundle dir is wholly owned by this script — wipe and repopulate so
+    // stale hashed files from previous builds do not accumulate forever.
+    rmSync(bundleDst, { recursive: true, force: true });
+    cpSync(bundleSrc, bundleDst, { recursive: true });
     writeFileSync(target, payload, 'utf8');
-    log(`wrote ${target} (public, unencrypted)`);
+    log(`wrote ${target} (public, multi-file)`);
+    log(`refreshed site-assets/bundle (${readdirSync(bundleDst).length} files)`);
   }
   console.log('\n  Done.\n');
   process.exit(0);
