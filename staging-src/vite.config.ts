@@ -25,7 +25,14 @@ import path from 'node:path'
 const PUBLIC = process.env.HB_PUBLIC === '1'
 
 export default defineConfig({
-  base: './',
+  // Public builds use an ABSOLUTE base. With './', Vite resolves asset URLs
+  // at runtime from document.currentScript — which is always null inside the
+  // type="module" tag it emits, so the fallback (document.baseURI) pointed
+  // every image at the site root and they all 404ed. '/' bakes literal
+  // /site-assets/bundle/... URLs into the bundle instead; correct because the
+  // launched site is served at the domain root. The gated build keeps './' —
+  // everything is inlined as data: URIs there, so no URL is ever resolved.
+  base: PUBLIC ? '/' : './',
   plugins: [react(), tailwindcss()],
   build: {
     assetsInlineLimit: PUBLIC ? 4096 : 100_000_000,
