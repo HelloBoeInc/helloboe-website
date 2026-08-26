@@ -201,6 +201,7 @@ staging-src/
   site.config.json    metadata and analytics       ← and this
   src/
     HelloBoePage.tsx  layout, colour, motion       ← no copy in here, by design
+    entry-server.tsx  pre-renders the public page at build time
     index.css         fonts and animations
     imports/          images
   index.html          page shell

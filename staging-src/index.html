@@ -7,6 +7,65 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      /* Reveal bootstrap. On the public site #root arrives PRE-RENDERED (see
+         entry-server.tsx), visible and scrollable before the React bundle has
+         loaded. This classic script runs at parse time, ahead of the deferred
+         module bundle, and starts the same motion system HelloBoePage's
+         useScrollReveal drives: set data-js so the hidden-until-revealed CSS
+         applies, play the hero entrance, and reveal [data-reveal] sections as
+         they enter the viewport. Without it, the pre-rendered page would sit
+         inert (or, worse, flash and re-animate) until React hydrated.
+
+         When #root is empty (dev server, gated /staging build) there is
+         nothing to observe and this only sets data-js; React takes over
+         exactly as before. useScrollReveal re-running after hydration is
+         harmless: re-observing a shown element or re-setting an attribute it
+         already has changes nothing visually. */
+      (function () {
+        var doc = document;
+        doc.documentElement.setAttribute('data-js', '');
+        var els = [].slice.call(doc.querySelectorAll('[data-reveal]'));
+        if (!els.length) return;
+
+        var show = function (el) { el.setAttribute('data-shown', 'true'); };
+        var reduceMotion =
+          typeof matchMedia === 'function' &&
+          matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion || typeof IntersectionObserver === 'undefined') {
+          els.forEach(show);
+          return;
+        }
+
+        /* Same tuning as useScrollReveal, so the motion feels identical
+           whichever of the two happens to reveal a given section. */
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              show(entry.target);
+              io.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -8% 0px' }
+        );
+        els.forEach(function (el) { io.observe(el); });
+
+        /* Double rAF: the first frame paints the hidden state, the second
+           reveals, so in-view sections fade in rather than popping. */
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            els.forEach(function (el) {
+              var box = el.getBoundingClientRect();
+              if (box.top < innerHeight && box.bottom > 0) {
+                show(el);
+                io.unobserve(el);
+              }
+            });
+          });
+        });
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

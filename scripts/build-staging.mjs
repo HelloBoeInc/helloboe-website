@@ -38,7 +38,7 @@
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync, cpSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { webcrypto as crypto } from 'node:crypto';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -224,6 +224,56 @@ if (!PUBLIC_MODE) {
 // PUBLIC_MODE keeps Vite's own script/link tags: the launched site serves
 // hashed, cacheable files from site-assets/bundle/ so the first paint does
 // not wait for a megabyte-sized monolithic document (see vite.config.ts).
+
+// ---------------------------------------------------------------------------
+// 3b. Public mode — pre-render the page into #root
+//
+//    A launched page whose #root is empty until the bundle executes is blank,
+//    and zero pixels tall, for the several seconds the download takes: nothing
+//    to see and nothing to scroll. Rendering the same React tree to HTML at
+//    build time (entry-server.tsx) makes the full page real from the first
+//    byte; the bundle then hydrates it in place (main.tsx). The inline reveal
+//    bootstrap in index.html keeps the motion system alive in the gap.
+//
+//    Gated builds skip this: the whole document ships inside one encrypted
+//    blob that only ever renders with JavaScript already running, so
+//    pre-rendering would buy nothing there.
+// ---------------------------------------------------------------------------
+
+if (PUBLIC_MODE) {
+  log('pre-rendering…');
+  run(['run', 'build', '--', '--ssr', 'src/entry-server.tsx']);
+  const { render } = await import(
+    pathToFileURL(resolve(SRC, 'dist-ssr/entry-server.js')).href
+  );
+  const appHtml = render();
+  if (appHtml.length < 10_000) {
+    fail(`pre-render produced only ${appHtml.length} chars of HTML, which cannot be the whole page`);
+  }
+
+  // The SSR pass resolves image imports independently of the client pass.
+  // Identical config must yield identical hashed URLs, but "must" is not
+  // "does": verify every asset the pre-rendered HTML references was actually
+  // emitted by the client build we are about to ship.
+  const referenced = new Set(
+    [...appHtml.matchAll(/\/site-assets\/bundle\/[^"'\s),]+/g)].map((m) => m[0]),
+  );
+  for (const url of referenced) {
+    if (!existsSync(resolve(DIST, url.slice(1)))) {
+      fail(`pre-rendered HTML references ${url}, which the client build did not emit`);
+    }
+  }
+
+  const emptyRoot = '<div id="root"></div>';
+  if (!html.includes(emptyRoot)) fail('index.html has no empty #root div to pre-render into');
+  // Function replacement: appHtml is markup and must not be interpreted for
+  // $-patterns by String.replace.
+  html = html.replace(emptyRoot, () => `<div id="root">${appHtml}</div>`);
+  log(
+    `pre-rendered ${(Buffer.byteLength(appHtml) / 1024).toFixed(0)} KB of HTML into #root ` +
+      `(${referenced.size} asset URLs verified against the client build)`,
+  );
+}
 
 // ---------------------------------------------------------------------------
 // 4. Metadata and analytics

@@ -1,4 +1,4 @@
-
 # Site build artifacts
 staging-src/node_modules/
 staging-src/dist/
+staging-src/dist-ssr/

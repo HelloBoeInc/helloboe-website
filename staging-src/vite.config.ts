@@ -21,10 +21,19 @@ import path from 'node:path'
  * Public builds are a normal multi-file build: hashed, cacheable assets
  * under site-assets/bundle/, images fetched in parallel (many are
  * loading="lazy"), and a small initial document.
+ *
+ * PUBLIC additionally gets a second, SSR pass (isSsrBuild, driven by
+ * build-staging.mjs running `vite build --ssr src/entry-server.tsx`). That
+ * emits dist-ssr/entry-server.js, which the build script imports in Node to
+ * pre-render the page into #root, so the document is full-height and
+ * scrollable before the client bundle has even started downloading. The SSR
+ * pass must mirror the public client pass (same base, assetsDir,
+ * assetsInlineLimit) so both resolve every image to the identical URL —
+ * build-staging.mjs verifies that file-by-file.
  */
 const PUBLIC = process.env.HB_PUBLIC === '1'
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   // Public builds use an ABSOLUTE base. With './', Vite resolves asset URLs
   // at runtime from document.currentScript — which is always null inside the
   // type="module" tag it emits, so the fallback (document.baseURI) pointed
@@ -35,6 +44,7 @@ export default defineConfig({
   base: PUBLIC ? '/' : './',
   plugins: [react(), tailwindcss()],
   build: {
+    outDir: isSsrBuild ? 'dist-ssr' : 'dist',
     assetsInlineLimit: PUBLIC ? 4096 : 100_000_000,
     // The public bundle dir is wholly owned by the build script: it wipes and
     // repopulates REPO/site-assets/bundle on every --public run.
@@ -42,8 +52,9 @@ export default defineConfig({
     cssCodeSplit: false,
     sourcemap: false,
     // Terser squeezes noticeably more out of a bundle that is mostly one
-    // large component than esbuild does.
-    minify: 'terser',
+    // large component than esbuild does. The SSR bundle runs once in Node at
+    // build time and is never shipped, so minifying it is wasted work.
+    minify: isSsrBuild ? false : 'terser',
     terserOptions: {
       compress: { passes: 2 },
       format: { comments: false },
@@ -61,7 +72,10 @@ export default defineConfig({
         // document.open()/write()/close() is far less certain. Since the
         // bundle has no imports left to resolve once everything is inlined,
         // there is nothing to give up by dropping modules.
-        format: 'iife',
+        //
+        // The SSR pre-render bundle is the one exception: build-staging.mjs
+        // imports it in Node, so it has to be a real ES module.
+        format: isSsrBuild ? 'es' : 'iife',
       },
     },
   },
@@ -70,4 +84,4 @@ export default defineConfig({
   },
   server: { host: '0.0.0.0', port: 5173 },
   preview: { host: '0.0.0.0', port: 5173 },
-})
+}))
