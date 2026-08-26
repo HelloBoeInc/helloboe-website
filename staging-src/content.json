@@ -22,9 +22,9 @@
   ],
 
   "links": {
-    "appStore": "",
-    "googlePlay": "",
-    "preLaunchNote": "Launching soon on iOS and Android.",
+    "appStore": "https://apps.apple.com/us/app/helloboe/id6760957118",
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.helloboe.app",
+    "preLaunchNote": "",
     "press": "",
     "about": "",
     "primaryCta": "#download",

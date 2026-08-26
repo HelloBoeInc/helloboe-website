@@ -312,6 +312,11 @@ function buildHead() {
   if (analyticsOn) {
     if (a.provider === 'plausible') {
       t.push(`<script defer data-domain="${esc(a.domain)}" src="${esc(a.scriptSrc)}"></script>`);
+      // Queue stub so custom events (the store-badge "Download Click" goal in
+      // HelloBoePage.tsx) never throw and are replayed once the script loads.
+      t.push(
+        `<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>`,
+      );
     } else if (a.provider === 'fathom') {
       t.push(`<script defer data-site="${esc(a.domain)}" src="${esc(a.scriptSrc)}"></script>`);
     } else {

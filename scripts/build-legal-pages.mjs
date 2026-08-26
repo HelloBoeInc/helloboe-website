@@ -11,12 +11,10 @@
  * static HTML so the fidelity is guaranteed by construction, then round-trip
  * verified (extract text back out of the HTML, assert it equals the source).
  *
- * The pages are intentionally UN-discoverable pre-launch:
- *   - <meta name="robots" content="noindex, nofollow"> on every page
- *   - a root robots.txt Disallows /privacy, /terms, /disclaimer
- *   - NOTHING links to them (not index.html, not staging/, no sitemap)
- * They remain fully readable at the direct URL with no auth — which is exactly
- * what Apple review + Google's crawler need, and all a store submission wants.
+ * Pre-launch these pages were kept un-discoverable (noindex + robots.txt
+ * Disallow + nothing linking to them). That posture was lifted at public
+ * launch (2026-08-26): the site footer now links to them and they are
+ * indexable like any other page.
  *
  * Usage:
  *   node scripts/build-legal-pages.mjs           # generate + verify
@@ -70,7 +68,6 @@ function renderPage(doc) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
 <title>${title} — HelloBoe</title>
 <meta name="description" content="${title} for HelloBoe, Inc.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,6 +103,19 @@ function renderPage(doc) {
     justify-content: space-between;
     border-bottom: 1px solid rgba(28, 28, 28, 0.08);
   }
+  .header-left { display: flex; align-items: center; gap: 20px; }
+  .header-back {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--black);
+    opacity: 0.55;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+  }
+  .header-back:hover { opacity: 0.9; }
   .header-logo img { height: 26px; width: auto; display: block; }
   .header-email {
     font-size: 13px;
@@ -200,11 +210,28 @@ function renderPage(doc) {
 <body>
 
   <header>
-    <a href="/" class="header-logo" aria-label="HelloBoe">
-      <img src="/assets/helloboe_logo_horizontal_black.png" alt="HelloBoe">
-    </a>
+    <div class="header-left">
+      <a href="/" class="header-back" id="back-link">&larr; Back</a>
+      <a href="/" class="header-logo" aria-label="HelloBoe">
+        <img src="/assets/helloboe_logo_horizontal_black.png" alt="HelloBoe">
+      </a>
+    </div>
     <a href="mailto:support@helloboe.com" class="header-email">support@helloboe.com</a>
   </header>
+
+  <script>
+    // Return the reader to wherever on helloboe.com they came from (today the
+    // gated /staging page, later the homepage). Direct visitors with no
+    // same-site history simply follow the href to the homepage.
+    document.getElementById('back-link').addEventListener('click', function (e) {
+      try {
+        if (document.referrer && new URL(document.referrer).origin === location.origin) {
+          e.preventDefault();
+          history.back();
+        }
+      } catch (_) { /* fall through to the plain link */ }
+    });
+  </script>
 
   <main class="doc">
     <h1 class="doc-title">${title}</h1>

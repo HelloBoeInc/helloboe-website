@@ -98,12 +98,16 @@ function MaybeLink({
       </span>
     );
   }
-  const external = /^(https?|mailto):/.test(url);
+  // Our own pages (privacy, terms, disclaimer, delete-account, …) open in the
+  // SAME tab so the reader can come back with the back button; only links that
+  // leave helloboe.com get a new tab.
+  const external =
+    url.startsWith("http") && !/^https?:\/\/([a-z0-9-]+\.)*helloboe\.com(\/|$)/i.test(url);
   return (
     <a
       href={url}
       className={className}
-      {...(external && url.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >
       {children}
     </a>
@@ -142,6 +146,17 @@ function Heading({
   );
 }
 
+/** Report a store badge click to Plausible (cookieless; the queue stub emitted
+ *  by build-staging.mjs guarantees window.plausible exists even if the script
+ *  is still loading or blocked). Shows up as the "Download Click" goal with a
+ *  `store` breakdown of apple vs google. */
+function trackDownload(store: "apple" | "google") {
+  (window as unknown as { plausible?: (e: string, o?: object) => void }).plausible?.(
+    "Download Click",
+    { props: { store } },
+  );
+}
+
 function AppBadges() {
   const badge = (kind: "apple" | "google") => {
     const href = kind === "apple" ? C.links.appStore : C.links.googlePlay;
@@ -155,7 +170,15 @@ function AppBadges() {
       );
     }
     return (
-      <a href={resolveHref(href)} target="_blank" rel="noopener noreferrer" className="hb-badge" data-live="true" aria-label={label}>
+      <a
+        href={resolveHref(href)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hb-badge"
+        data-live="true"
+        aria-label={label}
+        onClick={() => trackDownload(kind)}
+      >
         <Art />
       </a>
     );
@@ -289,7 +312,7 @@ export default function HelloBoePage() {
       <div className="hb-nav sticky top-0 z-50" data-scrolled={scrolled ? "true" : "false"}>
         <nav className="flex items-center justify-between px-6 lg:px-10 py-4 max-w-[1280px] mx-auto">
           <a href="#top" aria-label="HelloBoe, back to top" className="shrink-0">
-            <img src={imgHelloBoeLogoBlack3} alt="HelloBoe" className="h-5 object-contain mix-blend-multiply" />
+            <img src={imgHelloBoeLogoBlack3} alt="HelloBoe" className="h-5 object-contain" />
           </a>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -583,7 +606,7 @@ export default function HelloBoePage() {
         </div>
 
         <div className="flex justify-center mb-6">
-          <img src={imgHelloBoeLogoBlack3} alt="HelloBoe" loading="lazy" className="h-6 object-contain mix-blend-multiply" />
+          <img src={imgHelloBoeLogoBlack3} alt="HelloBoe" loading="lazy" className="h-6 object-contain" />
         </div>
 
         <p className="text-[#6d6358] text-[10px] leading-[1.3] text-center font-light">{C.footer.copyright}</p>

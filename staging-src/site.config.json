@@ -6,7 +6,7 @@
     "HELLOBOE_STAGING_PASSWORD environment variable and is never committed."
   ],
 
-  "launched": false,
+  "launched": true,
   "_launched": [
     "false  = the site is the invite-only preview at /staging.",
     "         The gate page is noindex/nofollow and carries a deliberately",
