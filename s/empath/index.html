@@ -12,7 +12,15 @@
          OG preview below, then lands humans on the homepage with UTM tags so
          share traffic is attributable in Plausible (aggregate-only - the tag
          is the archetype, never a user identifier). Per-archetype OG card
-         images slot in here when Kim's designs land. -->
+         images slot in here when Kim's designs land.
+
+         UTM passthrough (W50 V2): if the incoming URL already carries any
+         utm_* params (e.g. the app's card-share links tagging
+         utm_medium=social_card), they win verbatim over the defaults below -
+         lets new share surfaces report distinctly in Plausible with zero app
+         coupling. Only the JS redirect performs the passthrough; the no-JS
+         meta-refresh and the fallback link below keep the fixed default tag,
+         since static HTML can't inspect the incoming query string. -->
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://helloboe.com/">
     <meta property="og:type" content="website">
@@ -29,7 +37,21 @@
     <meta name="twitter:description" content="Temperament science meets real parenting. The first parenting app built to understand the child you actually have, for ages 4 to 36 months.">
     <meta name="twitter:image" content="https://helloboe.com/site-assets/og-image.png">
     <meta http-equiv="refresh" content="0; url=/?utm_source=helloboe_app&utm_medium=share&utm_campaign=profile_share_v1&utm_content=empath">
-    <script>location.replace("/?utm_source=helloboe_app&utm_medium=share&utm_campaign=profile_share_v1&utm_content=empath");</script>
+    <script>
+      (function () {
+        var DEFAULT_QS =
+          "utm_source=helloboe_app&utm_medium=share&utm_campaign=profile_share_v1&utm_content=empath";
+        var incoming = new URLSearchParams(location.search);
+        var hasUtm = false;
+        for (var key of incoming.keys()) {
+          if (key.indexOf("utm_") === 0) {
+            hasUtm = true;
+            break;
+          }
+        }
+        location.replace("/?" + (hasUtm ? incoming.toString() : DEFAULT_QS));
+      })();
+    </script>
   </head>
   <body>
     <p><a href="/?utm_source=helloboe_app&utm_medium=share&utm_campaign=profile_share_v1&utm_content=empath">Continue to HelloBoe</a></p>
