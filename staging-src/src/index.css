@@ -184,6 +184,32 @@ html[data-js] [data-float] { animation: hb-float 7s ease-in-out infinite; }
   }
 }
 
+/* ?nomotion in the URL: identical to the reduce-motion block above. The class
+   is set by the bootstrap script in index.html; kept as a mirror rather than
+   merged selectors so the accessibility block stays a pure media query. */
+html.hb-nomotion { scroll-behavior: auto; }
+html.hb-nomotion[data-js] [data-reveal],
+html.hb-nomotion[data-js] [data-reveal][data-shown='true'] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+html.hb-nomotion[data-js] [data-hero] { opacity: 1 !important; animation: none !important; }
+html.hb-nomotion[data-js] [data-float] { animation: none !important; }
+html.hb-nomotion .hb-card, html.hb-nomotion .hb-cta, html.hb-nomotion .hb-badge,
+html.hb-nomotion .hb-menu, html.hb-nomotion .hb-nav, html.hb-nomotion .hb-card-icon,
+html.hb-nomotion .hb-navlink::after {
+  transition: none !important;
+}
+
+/* ?noblur in the URL: the sticky nav's backdrop blur is a known scroll-hitch
+   source on mobile GPUs; this isolates it. */
+html.hb-noblur .hb-nav[data-scrolled='true'] {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background-color: rgba(253, 244, 233, 0.97);
+}
+
 /* Print: nothing may depend on having been scrolled into view, or the page
    comes out of the printer half blank. Belt and braces alongside the
    beforeprint handler in HelloBoePage. */

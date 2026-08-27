@@ -226,8 +226,9 @@ function useScrollReveal() {
     const revealAll = () => targets.forEach((el) => el.setAttribute("data-shown", "true"));
 
     const reduceMotion =
-      typeof window.matchMedia === "function" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      root.classList.contains("hb-nomotion") ||
+      (typeof window.matchMedia === "function" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 
     if (reduceMotion || typeof IntersectionObserver === "undefined") {
       revealAll();

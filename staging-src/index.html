@@ -24,14 +24,25 @@
          already has changes nothing visually. */
       (function () {
         var doc = document;
-        doc.documentElement.setAttribute('data-js', '');
+        var root = doc.documentElement;
+        root.setAttribute('data-js', '');
+
+        /* Diagnostic switches, harmless to leave in production:
+           ?nomotion applies the same instant treatment as the OS
+           reduce-motion setting, ?noblur drops the nav backdrop blur.
+           Used to isolate what interferes with scrolling on real phones. */
+        var q = location.search;
+        if (q.indexOf('nomotion') > -1) root.classList.add('hb-nomotion');
+        if (q.indexOf('noblur') > -1) root.classList.add('hb-noblur');
+
         var els = [].slice.call(doc.querySelectorAll('[data-reveal]'));
         if (!els.length) return;
 
         var show = function (el) { el.setAttribute('data-shown', 'true'); };
         var reduceMotion =
-          typeof matchMedia === 'function' &&
-          matchMedia('(prefers-reduced-motion: reduce)').matches;
+          root.classList.contains('hb-nomotion') ||
+          (typeof matchMedia === 'function' &&
+            matchMedia('(prefers-reduced-motion: reduce)').matches);
         if (reduceMotion || typeof IntersectionObserver === 'undefined') {
           els.forEach(show);
           return;
