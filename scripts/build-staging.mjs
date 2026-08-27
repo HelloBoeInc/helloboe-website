@@ -241,6 +241,18 @@ if (!PUBLIC_MODE) {
 // ---------------------------------------------------------------------------
 
 if (PUBLIC_MODE) {
+  // Inline the stylesheet. It is ~6 KB gzipped, and as a <link> it is a
+  // render-blocking request: on a phone connection the pre-rendered HTML sat
+  // white, and unscrollable, for the extra round trip. Inlined, first paint
+  // happens the moment the document arrives. The file stays in
+  // site-assets/bundle (the font URLs inside it are absolute, so they resolve
+  // identically either way); only the reference to it changes.
+  const cssLink = html.match(/<link rel="stylesheet" crossorigin href="(\/site-assets\/bundle\/[^"]+\.css)">/);
+  if (!cssLink) fail('public index.html has no stylesheet link to inline');
+  const cssCode = readFileSync(resolve(DIST, '.' + cssLink[1]), 'utf8');
+  html = html.replace(cssLink[0], () => `<style>${cssCode.replace(/<\/style/gi, '<\\/style')}</style>`);
+  log(`inlined ${(Buffer.byteLength(cssCode) / 1024).toFixed(0)} KB stylesheet into the document`);
+
   log('pre-rendering…');
   run(['run', 'build', '--', '--ssr', 'src/entry-server.tsx']);
   const { render } = await import(
