@@ -166,6 +166,31 @@ html[data-js] [data-float] { animation: hb-float 7s ease-in-out infinite; }
 }
 
 /* ---------------------------------------------------------------------------
+   Touch devices: the full motion system measurably interferes with scroll
+   gestures on phones (confirmed on-device: ?nomotion scrolled cleanly while
+   the normal page kept interrupting the gesture). On coarse pointers the
+   reveals become short pure-opacity fades with no movement and no stagger,
+   the hero and the initial in-view batch render instantly (data-initial is
+   set by the bootstrap in index.html / useScrollReveal), and the idle float
+   is off. Desktop keeps the full design.
+
+   Must stay ABOVE the reduced-motion block: both use !important at equal
+   specificity, and reduce-motion has to win for users who asked for none.
+--------------------------------------------------------------------------- */
+@media (pointer: coarse) {
+  html[data-js] [data-reveal] {
+    transform: none !important;
+    transition: opacity 0.35s ease-out !important;
+    transition-delay: 0ms !important;
+  }
+  html[data-js] [data-reveal][data-initial] {
+    transition: none !important;
+  }
+  html[data-js] [data-hero] { opacity: 1 !important; animation: none !important; }
+  html[data-js] [data-float] { animation: none !important; }
+}
+
+/* ---------------------------------------------------------------------------
    Accessibility: honour the OS "reduce motion" setting.
    Everything still reveals — it just arrives instantly instead of sliding.
 --------------------------------------------------------------------------- */

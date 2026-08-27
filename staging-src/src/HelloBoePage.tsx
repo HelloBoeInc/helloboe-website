@@ -249,11 +249,18 @@ function useScrollReveal() {
     );
     targets.forEach((el) => observer.observe(el));
 
-    // Anything already on screen at mount reveals immediately.
+    // Anything already on screen at mount reveals immediately. On touch
+    // devices it also gets data-initial, which suppresses the fade (see the
+    // pointer:coarse CSS): load-time animation interrupted scroll gestures
+    // on phones.
+    const coarse =
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(pointer: coarse)").matches;
     requestAnimationFrame(() => {
       targets.forEach((el) => {
         const box = el.getBoundingClientRect();
         if (box.top < window.innerHeight && box.bottom > 0) {
+          if (coarse) el.setAttribute("data-initial", "");
           el.setAttribute("data-shown", "true");
           observer.unobserve(el);
         }

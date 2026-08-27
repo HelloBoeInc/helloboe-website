@@ -62,19 +62,31 @@
         );
         els.forEach(function (el) { io.observe(el); });
 
-        /* Double rAF: the first frame paints the hidden state, the second
-           reveals, so in-view sections fade in rather than popping. */
-        requestAnimationFrame(function () {
-          requestAnimationFrame(function () {
-            els.forEach(function (el) {
-              var box = el.getBoundingClientRect();
-              if (box.top < innerHeight && box.bottom > 0) {
-                show(el);
-                io.unobserve(el);
-              }
-            });
+        /* Touch devices get the initial in-view batch instantly and
+           synchronously, before first paint: data-initial suppresses the
+           fade (see the pointer:coarse CSS), because load-time animation is
+           what interrupted scroll gestures on phones. Desktop keeps the
+           entrance fade via double rAF: the first frame paints the hidden
+           state, the second reveals, so sections fade rather than pop. */
+        var coarse =
+          typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches;
+        var initialReveal = function () {
+          els.forEach(function (el) {
+            var box = el.getBoundingClientRect();
+            if (box.top < innerHeight && box.bottom > 0) {
+              if (coarse) el.setAttribute('data-initial', '');
+              show(el);
+              io.unobserve(el);
+            }
           });
-        });
+        };
+        if (coarse) {
+          initialReveal();
+        } else {
+          requestAnimationFrame(function () {
+            requestAnimationFrame(initialReveal);
+          });
+        }
       })();
     </script>
     <script type="module" src="/src/main.tsx"></script>
