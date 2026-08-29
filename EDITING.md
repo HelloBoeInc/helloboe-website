@@ -132,6 +132,13 @@ URL in later without anyone touching the layout.
 This is how **Press**, **About**, and both **store badges** currently render.
 Paste in a real URL and they light up on the next build.
 
+### Dr. Shiner's copy is not editable prose
+
+Anything about Dr. Rebecca Shiner must be one of the three contractually
+approved texts, word for word — see `docs/SHINER-APPROVED-COPY.md`. If a
+sentence about her reads awkwardly, the fix is choosing a different approved
+text, never rewording.
+
 ### House rules, checked on every build
 
 The build **fails** on:
