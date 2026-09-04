@@ -381,6 +381,25 @@ function buildHead() {
     );
   }
 
+  // Google Ads tag. Counsel-gated: googleAds.enabled must stay false until
+  // the privacy policy is revised (see site.config.json and
+  // docs/GOOGLE-ADS-TAG.md). When live it runs under Consent Mode v2 with
+  // every storage category denied, so it sets no cookies; the consent
+  // defaults MUST be pushed to the dataLayer before gtag.js loads, which is
+  // why the inline script precedes the async loader here.
+  const ads = config.googleAds || {};
+  if (ads.enabled && config.launched) {
+    if (!/^AW-\d+$/.test(ads.tagId || '')) fail(`googleAds.tagId "${ads.tagId}" does not look like an AW- tag id`);
+    const conv = ads.conversions || {};
+    t.push(
+      `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}` +
+        `gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});` +
+        `gtag('js',new Date());gtag('config','${esc(ads.tagId)}');` +
+        `window.__HB_ADS=${JSON.stringify(conv).replace(/</g, '\\u003c')};</script>`,
+    );
+    t.push(`<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(ads.tagId)}"></script>`);
+  }
+
   // Analytics. Cookieless by choice — see the reasoning recorded in
   // site.config.json against the published privacy policy.
   const a = config.analytics || {};

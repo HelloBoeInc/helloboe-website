@@ -5,7 +5,6 @@
     "Nothing here is secret. The gate password is passed separately via the",
     "HELLOBOE_STAGING_PASSWORD environment variable and is never committed."
   ],
-
   "launched": true,
   "_launched": [
     "false  = the site is the invite-only preview at /staging.",
@@ -14,7 +13,6 @@
     "true   = the site is public. Full SEO metadata, indexable, canonical at",
     "         the site root. Flip this in the same change that removes the gate."
   ],
-
   "url": "https://helloboe.com/",
   "title": "HelloBoe | Your child, decoded.",
   "shortTitle": "HelloBoe",
@@ -23,12 +21,36 @@
   "themeColor": "#fdf4e9",
   "locale": "en_US",
   "twitterSite": "",
-
   "ogImage": "site-assets/og-image.png",
   "ogImageWidth": 1200,
   "ogImageHeight": 630,
   "favicon": "site-assets/app-icon.png",
-
+  "googleAds": {
+    "enabled": false,
+    "_enabled": [
+      "MUST STAY false until counsel updates the privacy policy. The live",
+      "policy states the website 'does not currently set advertising or",
+      "analytics cookies', that we 'do not permit third-party advertising",
+      "networks to collect information through the Services', and that any",
+      "future advertising use requires updating the policy FIRST (the",
+      "policy's own clause). Flipping this true before the revised",
+      "legal/source/privacy.json lands publishes a tag the policy says we",
+      "don't have.",
+      "Runbook: docs/GOOGLE-ADS-TAG.md.",
+      "Counsel ask: docs/COUNSEL-REQUEST-GOOGLE-ADS.md."
+    ],
+    "tagId": "AW-18429195722",
+    "conversions": {
+      "outboundClick": "AW-18429195722/7jsQCOGv_O0cEMrr3NNE"
+    },
+    "_consent": [
+      "When enabled, the tag is emitted with Consent Mode v2 defaults DENYING",
+      "ad_storage, ad_user_data, ad_personalization and analytics_storage: no",
+      "cookies are ever set; Google receives cookieless conversion pings and",
+      "models the rest. Deliberate (privacy-first brand, no consent banner).",
+      "Do not upgrade to cookie-based tracking without counsel sign-off."
+    ]
+  },
   "analytics": {
     "provider": "plausible",
     "_provider": [

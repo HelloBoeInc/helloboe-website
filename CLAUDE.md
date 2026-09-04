@@ -24,6 +24,13 @@ rules (HBR, expo, tsc hooks) do not apply here.
   `scripts/build-staging.mjs` on every build — see EDITING.md "House rules".
 - Legal pages (`privacy/`, `terms/`, `disclaimer/`) are generated from
   counsel-approved JSON by `scripts/build-legal-pages.mjs`; never hand-edit.
+- **`googleAds.enabled` in site.config.json must stay `false` until counsel's
+  revised privacy policy ships** — the live policy says the site sets no
+  advertising cookies and permits no ad-network collection, and its own
+  clause requires the policy update to precede any advertising use. The tag
+  is fully wired (Consent Mode v2, all storage denied, badge-click conversion
+  only); enable it only in the same commit as the regenerated legal pages.
+  See `docs/GOOGLE-ADS-TAG.md`.
 - Public builds are pre-rendered and hydration-deferred for mobile scroll
   performance; touch devices intentionally get reduced motion
   (`@media (pointer: coarse)` in `staging-src/src/index.css`). Do not

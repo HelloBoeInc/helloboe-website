@@ -149,12 +149,28 @@ function Heading({
 /** Report a store badge click to Plausible (cookieless; the queue stub emitted
  *  by build-staging.mjs guarantees window.plausible exists even if the script
  *  is still loading or blocked). Shows up as the "Download Click" goal with a
- *  `store` breakdown of apple vs google. */
+ *  `store` breakdown of apple vs google.
+ *
+ *  Also fires the Google Ads "Outbound click" conversion, but ONLY when the
+ *  counsel-gated tag is live: build-staging.mjs emits window.__HB_ADS and the
+ *  gtag loader solely when site.config.json googleAds.enabled is true (see
+ *  docs/GOOGLE-ADS-TAG.md for why that flag must stay false until the privacy
+ *  policy is updated). The badges open in a new tab, so firing on click loses
+ *  nothing to navigation. */
 function trackDownload(store: "apple" | "google") {
-  (window as unknown as { plausible?: (e: string, o?: object) => void }).plausible?.(
-    "Download Click",
-    { props: { store } },
-  );
+  const w = window as unknown as {
+    plausible?: (e: string, o?: object) => void;
+    gtag?: (...args: unknown[]) => void;
+    __HB_ADS?: { outboundClick?: string };
+  };
+  w.plausible?.("Download Click", { props: { store } });
+  if (w.gtag && w.__HB_ADS?.outboundClick) {
+    w.gtag("event", "conversion", {
+      send_to: w.__HB_ADS.outboundClick,
+      value: 1.0,
+      currency: "USD",
+    });
+  }
 }
 
 function AppBadges() {
