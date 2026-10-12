@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>HelloBoe</title>
+<script>
+  // One read of the user agent, then the store or the homepage, with this
+  // page's own query string carried over unchanged. Nothing else runs here.
+  (function () {
+    var ua = navigator.userAgent || '';
+    var dest = /iPhone|iPad|iPod/.test(ua) ? "https://apps.apple.com/us/app/helloboe/id6760957118"
+      : /Android/.test(ua) ? "https://play.google.com/store/apps/details?id=com.helloboe.app"
+      : "https://helloboe.com/";
+    var q = location.search;
+    if (q && q.length > 1) dest += (dest.indexOf('?') === -1 ? '?' : '&') + q.slice(1);
+    location.replace(dest);
+  })();
+</script>
+<noscript><meta http-equiv="refresh" content="2;url=https://helloboe.com/"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+  :root { --sand: #FBF4EA; --blue: #0076CE; --orange: #F15A29; --black: #1C1C1C; --white: #FFFFFF; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--sand); color: var(--black); font-family: 'Nunito Sans', sans-serif; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  header { padding: 28px 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(28, 28, 28, 0.08); }
+  .header-logo img { height: 26px; width: auto; display: block; }
+  .header-email { font-size: 13px; font-weight: 500; color: var(--black); opacity: 0.4; text-decoration: none; }
+  .doc { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  .doc-title { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: clamp(28px, 5vw, 40px); letter-spacing: -0.01em; line-height: 1.15; }
+  .doc-rule { height: 3px; width: 48px; background: var(--orange); border-radius: 2px; margin: 24px 0 20px; }
+  .get-links { font-size: 16px; line-height: 1.7; }
+  .get-links a { color: var(--blue); font-weight: 600; text-decoration: none; }
+  .get-links a:hover { text-decoration: underline; }
+  footer { max-width: 720px; margin: 0 auto; padding: 32px 24px 56px; border-top: 1px solid rgba(28, 28, 28, 0.08); display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between; }
+  .footer-copy { font-size: 13px; color: var(--black); opacity: 0.45; }
+  .footer-email { font-size: 13px; font-weight: 500; color: var(--black); opacity: 0.5; text-decoration: none; }
+  @media (max-width: 640px) { header { padding: 20px 20px; } .doc { padding: 40px 20px 72px; } }
+</style>
+</head>
+<body>
+
+  <header>
+    <a href="/" class="header-logo" aria-label="HelloBoe">
+      <img src="/assets/helloboe_logo_horizontal_black.png" alt="HelloBoe">
+    </a>
+    <a href="mailto:support@helloboe.com" class="header-email">support@helloboe.com</a>
+  </header>
+
+  <main class="doc">
+    <h1 class="doc-title">Opening HelloBoe.</h1>
+    <div class="doc-rule"></div>
+    <p class="get-links"><a href="https://apps.apple.com/us/app/helloboe/id6760957118">App Store</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.helloboe.app">Google Play</a> &middot; <a href="https://helloboe.com/">helloboe.com</a></p>
+  </main>
+
+  <footer>
+    <div class="footer-copy">&copy; 2026 HelloBoe, Inc. All rights reserved.</div>
+    <a href="mailto:support@helloboe.com" class="footer-email">support@helloboe.com</a>
+  </footer>
+
+</body>
+</html>
