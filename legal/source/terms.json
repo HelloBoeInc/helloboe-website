@@ -1,9 +1,9 @@
 {
   "key": "terms",
   "title": "Terms of Service",
-  "lastRevised": "July 16, 2026",
-  "consentVersion": "2.1",
-  "source": "HelloBoe - Terms of Service (07-16-2026).docx",
+  "lastRevised": "October 12, 2026",
+  "consentVersion": "2.2",
+  "source": "HelloBoe - Terms of Service (10-12-2026).docx",
   "blocks": [
     {
       "type": "body",
@@ -255,7 +255,16 @@
     },
     {
       "type": "body",
-      "text": "Automatic Renewal. If you purchase a subscription, your subscription shall automatically renew, and your payment method will be automatically charged at the start of each subscription period for any and all fees applicable to that period, as stated herein.  Specifically, unless you cancel your subscription, your subscription will automatically renew at the end of each billing period (monthly or annual, as selected at purchase), and the applicable platform (Apple App Store or Google Play) will charge the then-current subscription price to your platform account for each renewal term until you cancel. The price, billing frequency, and renewal terms are disclosed to you at the point of purchase. Because all billing is processed by the Apple App Store or Google Play, you can manage your subscription, turn off automatic renewal, and cancel at any time through your device’s subscription settings; cancellation takes effect at the end of the then-current billing period, and access continues until that time. As noted in Sections 5.4 and 7.7, deleting your Account does not by itself cancel a subscription or stop billing. Price changes apply only to subsequent billing periods, and, where required by applicable law, you will be notified and any required consent obtained before a price increase takes effect."
+      "text": "Free Trials. The Company may, from time to time, offer a free trial of a subscription through the Apple App Store or Google Play. The length of the free trial, the subscription to which it converts, the price that will be charged when the free trial ends, the billing frequency, and instructions for canceling are disclosed to you at the point of purchase. By starting a free trial, you authorize the applicable platform (Apple App Store or Google Play) to charge the subscription price disclosed at the point of purchase to your platform account when the free trial ends, and the subscription will thereafter automatically renew in accordance with Section 5.6 until you cancel. To avoid being charged, you must cancel through your device’s subscription settings before the free trial ends; for subscriptions through the Apple App Store, Apple recommends canceling at least 24 hours before the free trial ends. Free trial eligibility, including any limitation to new Accounts or to one free trial per platform account, is disclosed at the point of purchase, and the applicable platform makes the final determination of eligibility. Promotional and offer codes are subject to the terms disclosed when the code is redeemed and to the applicable platform’s terms."
+    },
+    {
+      "type": "body",
+      "text": "Automatic Renewal. If you purchase a subscription, your subscription shall automatically renew, and your payment method will be automatically charged at the start of each subscription period for any and all fees applicable to that period, as stated herein.  Specifically, unless you cancel your subscription, your subscription will automatically renew at the end of each billing period (monthly or annual, as selected at purchase), and the applicable platform (Apple App Store or Google Play) will charge the then-current subscription price to your platform account for each renewal term until you cancel. The price, billing frequency, and renewal terms are disclosed to you at the point of purchase. Because all billing is processed by the Apple App Store or Google Play, you can manage your subscription, turn off automatic renewal, and cancel at any time through your device’s subscription settings; cancellation takes effect at the end of the then-current billing period, and access continues until that time. As noted in Sections 5.4 and 7.7, deleting your Account does not by itself cancel a subscription or stop billing. Price changes apply only to subsequent billing periods, and, where required by applicable law, you will be notified and any required consent obtained before a price increase takes effect. Before you purchase a subscription or start a free trial through the App, these automatic renewal terms are presented to you at the point of purchase, and you must affirmatively acknowledge them before you are directed to the applicable platform to complete the purchase. The Company retains a record of your acknowledgment, including the terms presented and the date of acknowledgment, for a period of not less than three years, and such record may be retained following deletion of your Account in accordance with the Privacy Policy.",
+      "strong": true
+    },
+    {
+      "type": "body",
+      "text": "Confirmations and Renewal Reminders. When you purchase a subscription or start a free trial, the Company will send a confirmation to the email address associated with your Account stating the subscription purchased, the price, the length of any free trial, the date on which the free trial ends or the subscription first renews, and instructions for canceling. Before a subscription with a term of one year or longer renews, and at least once each year for any subscription that has continued for one year or more, the Company will send a reminder to that email address stating the price, the renewal date, and instructions for canceling. You are responsible for keeping the email address associated with your Account accurate and current. The applicable platform may also send its own receipts and notices."
     },
     {
       "type": "body",
@@ -331,7 +340,7 @@
     },
     {
       "type": "body",
-      "text": "The Company may send you communications related to your Account, the Services, and your use of the Platform, including push notifications, in-app messages and emails. By using the Platform, you consent to receiving such communications. You may opt-out of non-essential communications at any time through your Account settings or by contacting us at support@helloboe.com."
+      "text": "The Company may send you communications related to your Account, the Services, and your use of the Platform, including push notifications, in-app messages and emails. By using the Platform, you consent to receiving such communications. You may opt-out of non-essential communications at any time through your Account settings or by contacting us at support@helloboe.com. Communications relating to your subscription, including purchase confirmations, renewal reminders, and any notice required by applicable law, are essential communications and will be sent regardless of any opt-out election you make under this Section."
     },
     {
       "type": "body",
