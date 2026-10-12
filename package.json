@@ -7,6 +7,8 @@
   "scripts": {
     "build:staging": "node scripts/build-staging.mjs",
     "build:legal": "node scripts/build-legal-pages.mjs",
-    "check:legal": "node scripts/build-legal-pages.mjs --check"
+    "check:legal": "node scripts/build-legal-pages.mjs --check",
+    "build:get": "node scripts/build-get-page.mjs",
+    "check:get": "node -e \"import('./scripts/build-get-page.mjs').then((m) => { const d = m.checkGetPage(); console.log('check:get OK', JSON.stringify(d)); }).catch((e) => { console.error(e.message); process.exit(1); })\""
   }
 }

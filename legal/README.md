@@ -9,8 +9,11 @@ app — never edited by hand here.
 
 The canonical text lives in the **app repo** (`HelloBoeInc/helloboe-app`) at
 `src/content/legal/{privacy,terms,disclaimer}.json`, generated verbatim from
-counsel's 06-30 `.docx` finals by that repo's `scripts/build-legal-assets.mjs`.
-The version is tied to `CONSENT_VERSION` (currently **2.0**, "June 30, 2026").
+counsel's `.docx` finals (Privacy and Disclaimer dated 06-30-2026, Terms from
+"HelloBoe - Terms of Service (10-12-2026).docx") by that repo's
+`scripts/build-legal-assets.mjs`. The version is tied to `CONSENT_VERSION`
+(currently **2.2**: Terms last revised "October 12, 2026", Privacy and
+Disclaimer "June 30, 2026").
 
 `legal/source/*.json` here are byte-for-byte copies of those files (verified by
 `shasum -a 256` at vendor time). Do **not** edit them.
@@ -21,9 +24,12 @@ The version is tied to `CONSENT_VERSION` (currently **2.0**, "June 30, 2026").
 `{privacy,terms,disclaimer}/index.html` — one clean extensionless URL each on
 GitHub Pages. Each heading block becomes `<h2>`, each body block `<p>`; the text
 is escaped for HTML but otherwise untouched (curly quotes, dashes, URLs stay
-raw), so the rendered text is byte-identical to the source. The generator then
-**round-trips** (re-extracts the text from the HTML and asserts a matching
-`sha256`) — that check is the verbatim proof.
+raw), so the rendered text is byte-identical to the source. A body block the
+app's generator marks `strong: true` (counsel's bold paragraph, Terms 5.6
+Automatic Renewal) renders as `<p><strong>…</strong></p>`, and the round-trip
+carries that flag. The generator then **round-trips** (re-extracts the text
+from the HTML and asserts a matching `sha256`) — that check is the verbatim
+proof.
 
 ```bash
 node scripts/build-legal-pages.mjs          # generate + verify

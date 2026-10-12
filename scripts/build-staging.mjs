@@ -40,6 +40,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync, cpSync } 
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { webcrypto as crypto } from 'node:crypto';
+import { checkGetPage } from './build-get-page.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO = resolve(__dirname, '..');
@@ -155,6 +156,10 @@ function lintCopy() {
   }
 }
 lintCopy();
+// The /get redirect page (scripts/build-get-page.mjs) is checked before every
+// build the way the copy is: the three destinations from the site config and
+// the robots meta must be present, and no analytics, or the build stops here.
+checkGetPage();
 
 // ---------------------------------------------------------------------------
 // 2. Build the Vite app

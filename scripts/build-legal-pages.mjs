@@ -23,6 +23,9 @@
  * To update when counsel issues new text: re-run the app repo's
  * scripts/build-legal-assets.mjs, copy the 3 refreshed JSON into legal/source/
  * (hashes must match the app repo), then re-run this. See legal/README.md.
+ * A body block carrying `strong: true` (the app generator's mark for counsel's
+ * bold paragraph) renders as <p><strong>…</strong></p> and round-trips with
+ * its flag; nothing else in the renderer changes.
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
@@ -55,11 +58,17 @@ function renderPage(doc) {
   const revised = esc(doc.lastRevised);
   const version = esc(doc.consentVersion);
   // One block per line so the round-trip extractor can parse deterministically.
+  // A body block the app's generator marks `strong: true` (counsel's bold
+  // paragraph, Terms 5.6 Automatic Renewal since consent 2.2) renders as
+  // <p><strong>…</strong></p>; the extractor below unwraps it, so the text is
+  // still proven verbatim and the bold is proven to be on that block alone.
   const body = doc.blocks
     .map((b) =>
       b.type === 'heading'
         ? `      <h2>${esc(b.text)}</h2>`
-        : `      <p>${esc(b.text)}</p>`,
+        : b.strong
+          ? `      <p><strong>${esc(b.text)}</strong></p>`
+          : `      <p>${esc(b.text)}</p>`,
     )
     .join('\n');
 
@@ -257,8 +266,10 @@ function extractBlocks(html) {
   const blocks = [];
   for (const line of main.split('\n')) {
     const h = line.match(/^\s*<h2>(.*)<\/h2>\s*$/);
+    const strong = line.match(/^\s*<p><strong>(.*)<\/strong><\/p>\s*$/);
     const p = line.match(/^\s*<p>(.*)<\/p>\s*$/);
     if (h) blocks.push({ type: 'heading', text: unesc(h[1]) });
+    else if (strong) blocks.push({ type: 'body', text: unesc(strong[1]), strong: true });
     else if (p) blocks.push({ type: 'body', text: unesc(p[1]) });
   }
   return blocks;
@@ -285,8 +296,8 @@ for (const key of DOCS) {
   const served = CHECK_ONLY ? html : readFileSync(outFile, 'utf8');
   const extracted = extractBlocks(served);
 
-  const srcText = doc.blocks.map((b) => `${b.type} ${b.text}`).join('\n');
-  const outText = extracted.map((b) => `${b.type} ${b.text}`).join('\n');
+  const srcText = doc.blocks.map((b) => `${b.type}${b.strong ? '+strong' : ''} ${b.text}`).join('\n');
+  const outText = extracted.map((b) => `${b.type}${b.strong ? '+strong' : ''} ${b.text}`).join('\n');
   const ok =
     extracted.length === doc.blocks.length && sha256(srcText) === sha256(outText);
 
